@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<title>ศูนย์ข้อมูลที่ปรึกษา กระทรวงการคลัง</title>
+
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+
+<!-- Font -->
+<link href="assets/css/fonts/kanit/css/fonts.css" rel="stylesheet">
+
+<!-- CSS Global Compulsory -->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/grahp.css">
+
+<!-- CSS Customization -->
+<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+<!-- CSS Header and Footer -->
+<link rel="stylesheet" href="assets/css/headers/header-default.css">
+<link rel="stylesheet" href="assets/css/footers/footer-v8.css">
+<!-- CSS Implementing Plugins -->
+<link rel="stylesheet" href="assets/plugins/animate.css">
+<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/plugins/login-signup-modal-window/css/style.css">
+<link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
+<link rel="stylesheet" href="assets/plugins/fancybox/source/jquery.fancybox.css">
+<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="assets/plugins/master-slider/masterslider/style/masterslider.css">
+<link rel='stylesheet' href="assets/plugins/master-slider/masterslider/skins/black-2/style.css">
+<link rel="stylesheet" href="assets/js/graph/plugins/morris/morris-0.4.3.min.css">
+<!-- CSS Theme -->
+<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
+<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+<link rel="stylesheet" href="assets/css/new_style.css">
+<style></style>
+</head>
+
+<body class="header-fixed header-fixed-space-v2">
+<img src="assets/img/black_ribbon_bottom_left.png" class="black-ribbon stick-bottom stick-left"/>
+<div class="wrapper"> 
+  <!--=== Header v8 ===-->
+  <div class="header header-sticky">
+    <div class="container"> 
+      <!-- Logo --> 
+      <a class="logo" href="index.html"> <img src="assets/img/new_logo.png" alt="Logo"> </a> 
+      <!-- End Logo --> 
+      <!-- Topbar -->
+      <div class="topbar hidden-xs hidden-sm hidden-md">
+        <ul class="loginbar pull-right">
+          <li><a class="cd-log_reg cd-signin"  href="javascript:void(0);"><i class="fa fa-user fa-1x" aria-hidden="true"></i> <span class="hidden-xs">เข้าสู่ระบบ</span></a></li>
+          <li class="topbar-devider"></li>
+          <li><a href="contact.html"><i class="fa fa-phone  fa-1x" aria-hidden="true"></i> <span class="hidden-xs">ติดต่อเรา</span></a></li>
+          <li class="topbar-devider"></li>
+          <li class="hoverSelector"><img src="assets/img/thai_flag.jpg"> <a class="hidden-xs">ภาษาไทย</a>
+            <ul class="languages hoverSelectorBlock">
+              <li class="active"> <a href="#">English <i class="fa fa-check"></i></a> </li>
+              <li><a href="#">China</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End Topbar --> 
+      <!-- Toggle get grouped for better mobile display -->
+      <button type="button" class="navbar-toggle margin-burger" data-toggle="collapse" data-target=".navbar-responsive-collapse" style=""> <span class="sr-only">Toggle navigation</span> <span class="fa fa-bars" style="color: #bbb"></span> </button>
+      <div class="topbar  hidden-lg">
+        <ul class="loginbar pull-right-xs">
+          <li><a class="cd-log_reg cd-signin"  href="javascript:void(0);"><i class="fa fa-user fa-1x" aria-hidden="true"></i> <span class="hidden-xs">เข้าสู่ระบบ</span></a></li>
+          <li class="topbar-devider"></li>
+          <li><a href="contact.html"><i class="fa fa-phone  fa-1x" aria-hidden="true"></i> <span class="hidden-xs">ติดต่อเรา</span></a></li>
+          <li class="topbar-devider"></li>
+          <li class="hoverSelector"><img src="assets/img/thai_flag.jpg"> <a class="hidden-xs">ภาษาไทย</a>
+            <ul class="languages hoverSelectorBlock">
+              <li class="active"> <a href="#">English <i class="fa fa-check"></i></a> </li>
+              <li><a href="#">China</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End Toggle --> 
+    </div>
+    <!--/end container--> 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <!-- Home -->
+          <li > <a href="index.html"> หน้าแรก </a> </li>
+          <!-- End Home --> 
+          <!-- Pages -->
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"> หลักเกณฑ์การขึ้นทะเบียน </a>
+            <ul class="dropdown-menu">
+              <!-- หลักเกณฑ์การขึ้นทะเบียน -->
+              <li> <a href="#">คู่มือประชาชน</a> </li>
+              <li> <a href="topic1.html">หลักเกณฑ์เบื้องต้นสำหรับการจดทะเบียน</a> </li>
+              <li> <a href="topic2.html">ขั้นตอนการขึ้นทะเบียนที่ปรึกษา</a> </li>
+              <li> <a href="topic3.html">รหัสสาขา ความเชี่ยวชาญ และการบริการ</a> </li>
+              <!-- End หลักเกณฑ์การขึ้นทะเบียน -->
+            </ul>
+          </li>
+          <!-- End Pages --> 
+          <!-- ขึ้นทะเบียนที่ปรึกษา -->
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"> ขึ้นทะเบียนที่ปรึกษา </a>
+            <ul class="dropdown-menu">
+              <li> <a href="register1.html">ที่ปรึกษาอิสระ</a> </li>
+              <li> <a href="register2.html">ที่ปรึกษาห้างหุ้นส่วนหรือบริษัท</a> </li>
+              <li> <a href="register3.html">ที่ปรึกษาสถาบันการศึกษา</a> </li>
+              <li> <a href="register4.html">ที่ปรึกษามูลนิธิ</a> </li>
+              <li> <a href="register5.html">ที่ปรึกษาสมาคม</a> </li>
+              <li> <a href="register6.html">ที่ปรึกษาองค์กรของรัฐ</a> </li>
+            </ul>
+          </li>
+          <!-- End ขึ้นทะเบียนที่ปรึกษา --> 
+          <!-- หลักเกณฑ์เบื้องต้นสำหรับการขึ้นทะเบียน -->
+          <li> <a href="price.html"> หลักเกณฑ์ราคากลางการจ้างที่ปรึกษา </a> </li>
+          <!-- End หลักเกณฑ์เบื้องต้นสำหรับการขึ้นทะเบียน --> 
+          <!-- เกี่ยวกับเรา -->
+          <li class="dropdown active"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"> เกี่ยวกับเรา </a>
+            <ul class="dropdown-menu">
+              <li> <a href="about1.html">ข้อมูลทั่วไปเกี่ยวกับที่ปรึกษา</a> </li>
+              <li> <a href="about2.html">ข้อมูลของศูนย์ข้อมูลที่ปรึกษา</a> </li>
+              <li> <a href="about3.html">จรรยาบรรณ</a> </li>
+            </ul>
+          </li>
+          <!-- End เกี่ยวกับเรา --> 
+          <!-- Search Block -->
+          <li> <i class="search fa fa-search search-btn"></i>
+            <div class="search-open">
+              <div class="input-group animated fadeInDown">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                <button class="btn-gold" type="button">Go</button>
+                </span> </div>
+            </div>
+          </li>
+          <!-- End Search Block -->
+        </ul>
+      </div>
+      <!--/end container--> 
+    </div>
+    <!--/navbar-collapse--> 
+  </div>
+  <!--=== End Header v8 ===--> 
+  <!--/breadcrumbs-->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="pull-right breadcrumb">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li class="active">เกี่ยวกับเรา</li>
+      </ul>
+    </div>
+    <!--/container--> 
+  </div>
+  <!--/breadcrumbs--> 
+  
+  <!-- Begin Content -->
+  <div class="content-md">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><span class="h1">เกี่ยวกับเรา |</span> <span class="h2">ข้อมูลทั่วไปเกี่ยวกับที่ปรึกษา</span></div>
+      </div>
+      <div class="col-md-12 no-padding">
+        <div class="row">
+          <div class=" detail-about">
+            <div class="col-md-12">
+              <div class="panel-group acc-v1" id="accordion-1">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"> <a class="accordion-toggle1" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-One"> ความหมายของที่ปรึกษา </a> </h4>
+                  </div>
+                  <div id="collapse-One" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row"> <span class="title">ความหมายของที่ปรึกษา</span> </div>
+                          <div class="row margin-bottom-10">
+                            <p class="text-indent">ที่ปรึกษาคือ บุคคลธรรมดาหรือนิติบุคคลที่ประกอบอาชีพ ประกอบกิจการ หรือให้บริการคำปรึกษาหรือแนะนำทางด้านวิศวกรรม สถาปัตยกรรม ผังเมือง กฎหมาย เศรษฐศาสตร์ บัญชี การเงิน การคลัง สิ่งแวดล้อม วิทยาศาสตร์ เทคโนโลยี สาธารณสุข ศิลปวัฒนธรรม การศึกษาวิจัย เป็นต้น</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"> <a class="accordion-toggle1 collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Two"> ลักษณะของงานที่ปรึกษา </a> </h4>
+                  </div>
+                  <div id="collapse-Two" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row"> <span class="title">ลักษณะของงานที่ปรึกษา</span> </div>
+                          <div class="row margin-bottom-10">
+                            <p >งานที่ปรึกษา คือ งานบริการทางวิชาการ ซึ่งไม่ใช่งานที่มีลักษณะเป็นงานประจํา ได้แก่ งานประเภทต่าง ๆ ดังต่อไปนี้</p>
+                            <div class="text-indent">
+                              <p >(1) การออกแบบทางสถาปัตยกรรมและวิศวกรรม</p>
+                              <p>(2) การควบคุมและจัดการการก่อสร้าง</p>
+                              <p>(3) การศึกษาวิเคราะห์เรื่องใดเรื่องหนึ่ง เพื่อจัดทํานโยบาย แนวทางการแก้ไขปัญหา แผนการดําเนินงานในระดับต่าง ๆ  
+                                สร้างความเข้าใจในปัญหา เช่น การจัดทําแผนปรับโครงสร้างขององค์กร การแปรรูปรัฐวิสาหกิจ การจัดทําแผนหลักการพัฒนา  
+                                เศรษฐกิจสังคมของพื้นที่เฉพาะ การจัดทําแผนหลักการพัฒนาทรัพยากรน้ำในพื้นที่ลุ่มน้ำ การจัดทําระบบการดําเนินธุรกิจ 
+                                และระบบการจัดการด้านการเงินขององค์กร เป็นต้น</p>
+                              <p>(4) การศึกษาความเหมาะสมของโครงการ เพื่อจัดทําแผนการลงทุนดําเนินโครงการ</p>
+                              <p>(5) การตรวจสอบวิเคราะห์เพื่อแก้ปัญหาเฉพาะทางวิศวกรรม เช่น ปัญหาอาคารร้าว ปัญหาน้ำท่วม</p>
+                              <p>(6) การจัดการและบริหารโครงการ </p>
+                              <p>(7) การสํารวจรวบรวมข้อมูลทางวิชาการ เช่น การจัดทําแผนที่ดินด้วยระบบสารสนเทศทางภูมิศาสตร์</p>
+                              <p>(8) การจัดทําแผนหลักและการพัฒนาระบบข้อมูลเทคโนโลยีสารสนเทศ และระบบข้อมูลเพื่อการจัดการ (Management  
+                                Information System)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"> <a class="accordion-toggle1 collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Three"> ความจําเป็นในการว่าจ้างที่ปรึกษา </a> </h4>
+                  </div>
+                  <div id="collapse-Three" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="row"> <span class="title">ความจําเป็นในการว่าจ้างที่ปรึกษา</span> </div>
+                        <div class="row margin-bottom-20">
+                          <p>(1) หน่วยงานไม่มีเจ้าหน้าที่ที่มีความสามารถในสาขาวิชาชีพที่ต้องการเพียงพอ หรือจําเป็นต้องใช้บุคคลที่มีความรู้หลายด้าน หรือเจ้าหน้าที่มีจํานวนไม่เพียงพอที่จะดําเนินงานได้เอง </p>
+                          <p>(2) หน่วยงานต้องการข้อคิดเห็นจากที่ปรึกษาซึ่งเป็นบุคคลภายนอก (Second Opinion) ซึ่งเสนอความเห็นได้อย่างอิสระและปราศจากอคติ เพื่อพิจารณาประกอบกับข้อคิดเห็นของบุคคลภายใน สําหรับเรื่องที่มีความสําคัญในระดับสูงหรือเพื่อให้การวิเคราะห์ปัญหามีแนวคิดที่ต่างจากแนวคิดในกรอบราชการ </p>
+                          <p>(3) หน่วยงานไม่ต้องการเพิ่มกําลังคน ทั้งนี้เนื่องจากงานนั้นมีเป็นครั้งคราว หรือหน่วยงานไม่สามารถเพิ่มกําลังคนได้เนื่องจากข้อจํากัดในด้านอัตรากําลัง</p>
+                          <p class="text-indent">อย่างไรก็ตาม การว่าจ้างที่ปรึกษาจะต้องคํานึงถึงการใช้บุคลากรของหน่วยงานที่มีอยู่ให้เป็นประโยชน์ให้มากที่สุดเท่า         ที่จะทําได้ และจะต้องคํานึงถึงการพัฒนาความรู้ความสามารถของบุคลากรของหน่วยงานด้วย ทางหนึ่งที่อาจทําได้ คือ การว่าจ้าง   ที่ปรึกษาให้ทํางานร่วมกับบุคลากรของหน่วยงาน ในกรณีนี้ หน่วยงานจะมีบุคลากรพร้อมในหลายด้าน แต่อาจขาดผู้ที่มีประสบการณ์มากพอที่จะเป็นหัวหน้าคณะทํางาน หรือขาดผู้ที่มีความรู้ความเชี่ยวชาญเฉพาะด้าน</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"> <a class="accordion-toggle1 collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Four"> การเลือกจ้างที่ปรึกษาอิสระหรือที่ปรึกษานิติบุคคล </a> </h4>
+                  </div>
+                  <div id="collapse-Four" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="row"> <span class="title">การเลือกจ้างที่ปรึกษาอิสระหรือที่ปรึกษานิติบุคคล</span> </div>
+                        <div class="row margin-bottom-20">
+                          <p class="text-indent">การว่าจ้างที่ปรึกษาอิสระ มีข้อดีตรงที่การว่าจ้างทําได้เร็วกว่าการว่าจ้างที่ปรึกษานิติบุคคลและอัตราค่าตอบแทนต่ำกว่า โดยทั่วไป สําหรับบุคคลที่มีความรู้ความสามารถระดับเดียวกัน อัตราค่าตอบแทน(Remuneration) ของที่ปรึกษาอิสระที่ไม่สังกัดองค์กรใดจะต่ำกว่าอัตราค่าตอบแทนของที่ปรึกษาที่เป็นนิติบุคคลมาก (อัตราค่าตอบแทน ได้แก่ เงินเดือน บวกค่าใช้จ่ายหรือค่าโสหุ้ย และกําไร) ทั้งนี้เพราะที่ปรึกษาอิสระมีค่าโสหุ้ย (Overhead Costs) ต่ำกว่าที่ปรึกษานิติบุคคลมาก เมื่อเทียบกับที่ปรึกษานิติบุคคล </p>
+                          <p class="text-indent">ถึงแม้การว่าจ้างที่ปรึกษาอิสระจะเสียค่าใช้จ่ายน้อยกว่า แต่มีข้อจํากัดตรงที่ไม่สามารถจะใช้สําหรับภารกิจที่ต้องการที่ปรึกษาหลายคนทํางานร่วมกันเป็นทีม ดังนั้น โดยทั่วไป การว่าจ้างที่ปรึกษาอิสระจะมีความเหมาะสมในกรณีที่ภารกิจที่จะให้ที่ปรึกษาดําเนินงานต้องการที่ปรึกษาเพียงคนเดียว ลักษณะของงานประเภทนี้ ได้แก่ การว่าจ้างผู้เชี่ยวชาญให้ทําหน้าที่ให้คําปรึกษาแนะนํา (Advisor) แก่เจ้าหน้าที่ในหน่วยงานหรือให้ทําการศึกษาวิเคราะห์เรื่องใดเรื่องหนึ่งร่วมกับเจ้าหน้าที่ของหน่วยงาน หรือที่ปรึกษาอื่นที่หน่วยงานได้ว่าจ้างมา การว่าจ้างที่ปรึกษาอิสระหลายๆ คนให้มาทํางานร่วมกันจะยุ่งยากในทางปฏิบัติ เนื่องจากเพิ่มภาระในการคัดเลือกที่ปรึกษาและบริหารสัญญาและเสี่ยง ต่อความล้มเหลวในการดําเนินภารกิจได้หากกลุ่มที่ปรึกษาอิสระ มีปัญหาในด้านการประสานงาน </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"> <a class="accordion-toggle1 collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Five"> การเลือกจ้างที่ปรึกษาอิสระหรือที่ปรึกษานิติบุคคล </a> </h4>
+                  </div>
+                  <div id="collapse-Five" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="row"> <span class="title">ความจําเป็นในการว่าจ้างที่ปรึกษาต่างประเทศ</span> </div>
+                        <div class="row margin-bottom-20">
+                          <p >ถึงแม้นโยบายของรัฐบาลต้องการให้ใช้ที่ปรึกษาไทยแต่การว่าจ้างที่ปรึกษาต่างประเทศอาจมีความจําเป็นในบางกรณีได้แก่</p>
+                          <div class="text-indent">
+                            <p>(1) โครงการที่ใช้เงินกู้จําเป็นต้องเปิดให้มีการแข่งขันโดยเสรี เว้นแต่กรณีที่ระบุไว้ชัดเจนว่าต้องใช้ที่ปรึกษาไทยเท่านั้นอย่างไรก็ตาม ที่ปรึกษาไทยมีสิทธิเข้าแข่งขันเช่นกัน</p>
+                            <p >(2) งานที่เป็นเทคโนโลยีขั้นสูงหรืองานที่มีความยุ่งยากซับซ้อน ซึ่งที่ปรึกษาไทยยังมีความชํานาญและประสบการณืไม่เพียงพอ เช่น การออกแบบเตาปฏิกรณ์นิวเคลียร์ งานออกแบบ เขื่อนขนาดใหญ่ งานออกแบบอุโมงค์รถไฟใต้ดิน งานสร้างสะพานข้ามแม่น้ำที่มีความยาวมาก สะพานแขวน เป็นต้น</p>
+                            <p >(3) งานด้าน Institutional Planning หรือ Management Planning ซึ่งเป็นงานของโครงการต่าง ๆ ภายใต้การปฏิรูปภาครัฐบาล งานประเภทนี้ต้องการผู้ที่มีประสบการณ์ในเรื่องนี้ในต่างประเทศ เช่น อังกฤษ นิวซีแลนด์</p>
+                          </div>
+                          <p >บริษัทที่ปรึกษาต่างประเทศเรียกค่าตอบแทนในอัตราที่สูงมาก ทั้งเจ้าหน้าที่ที่เป็นคนไทยและชาวต่างประเทศ ดังนั้น การว่าจ้างบริษัทที่ปรึกษาต่างประเทศจึงต้องพิจารณาความเหมาะสมและความคุ้มค่าอย่างรอบคอบ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Tabs--> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Content --> 
+  
+  <!--=== Footer v8 ===-->
+  <div class="footer-v8">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-3 col-sm-12 col-xs-12 column-one md-margin-bottom-50"> <a href="index.html"><img class="footer-logo" src="assets/img/logo_tcs.png" alt=""></a>
+              <p class="margin-bottom-20">ที่อยู่ : อาคารทิปโก้ ชั้น 32 ถ.พระราม 6 แขวงสามเสนใน เขตพญาไท กรุงเทพฯ 10400</p>
+              <p>โทรศัพท์ 02-271-7999 ต่อ 5714-5719<br>
+                โทรสาร 02-357-3576<br>
+                Email : thaiconsult@pdmo.go.th</p>
+              <p>เวลาทำการ จันทร์-ศุกร์ เวลา 08.00 - 17.00 น.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <h2>เมนูหลัก</h2>
+              <ul class="footer-lists">
+                <li><i class="fa fa-angle-right"></i><a href="#">หน้าแรก</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">หลักเกณฑ์การขึ้นทะเบียน</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">ขึ้นทะเบียนที่ปรึกษา</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">หลักเกณฑ์ราคากลางการจ้างที่ปรึกษา </a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">เกี่ยวกับเรา</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6" >
+              <h2>กฏหมายที่เกี่ยวข้อง</h2>
+              <ul class="footer-lists">
+                <li><i class="fa fa-angle-right"></i><a href="#">พ.ร.บ.จัดซื้อจัดจ้าง</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">คู่มือประชาชน</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">กฏกระทรวง</a></li>
+              </ul>
+              <h2><a href="faq.html" style="color: #fff;">คำถามที่พบบ่อย</a></h2>
+              <h2>แผนผังเว็บไซต์</h2>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+              <h2>เว็บไซต์ที่เกี่ยวข้อง</h2>
+              <ul class="footer-lists">
+                <li><i class="fa fa-angle-right"></i><a href="#">กระทรวงการคลัง</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">กรมสรรพากร</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">กรมบัญชีกลาง</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">สำนักงานบริหารหนี้สาธารณะ</a></li>
+              </ul>
+              <h2>ติดตามข้อมูลข่าวสาร</h2>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="กรุณากรอกอีเมล์ของคุณ">
+                <span class="input-group-btn">
+                <button class="btn btn-black" type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                </span> </div>
+            </div>
+          </div>
+        </div>
+        <!--/end row--> 
+      </div>
+      <!--/end container--> 
+    </footer>
+    <footer class="copyright">
+      <div class="container">
+        <div class="col-md-6 center-xs left-min-xs no-padding" >
+          <ul class="list-inline terms-menu">
+            <li><i class="fa fa fa-line-chart fa-lg"></i> <span class="hidden-xs">จำนวนผู้เข้าชมทั้งหมด</span> 1,009,000 ครั้ง</li>
+            <li><i class="fa fa-bar-chart-o fa-lg"></i> <span class="hidden-xs">จำนวนผู้เข้าชมวันนี้</span> 1,000 ครั้ง</li>
+          </ul>
+        </div>
+        <div class="col-md-6 center-xs right-min-xs no-padding" >
+          <ul class="list-inline terms-menu">
+            <li>2016 &copy; Consult Database Center All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+      <!--/end container--> 
+    </footer>
+  </div>
+  <!--=== End Footer v8 ===--> 
+  <!-- Login/Reg Modal Box -->
+  <div class="cd-user-modal">
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+      <ul class="cd-switcher">
+        <li><a href="javascript:void(0);">เข้าสู่ระบบ</a></li>
+        <li><a href="javascript:void(0);">ขึ้นทะเบียนที่ปรึกษา</a></li>
+      </ul>
+      <div id="cd-login">
+        <form class="cd-form">
+          <div class="lined-text"><span>กรุณากรอกชื่อผู้ใช้และรหัสผ่าน</span>
+            <hr>
+          </div>
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signup-email">อีเมล์</label>
+            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="อีเมล์">
+            <span class="cd-error-message">Error message here!</span> </p>
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signup-password">Password</label>
+            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+            <a href="javascript:void(0);" class="hide-password">Hide</a> <span class="cd-error-message">Error message here!</span> </p>
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="เข้าสู่ระบบ">
+          <h6 class="fieldset cd-form-bottom-message"><a href="javascript:void(0);">ลืมรหัสผ่าน?</a></h6>
+          </p>
+        </form>
+      </div>
+      <!-- cd-signup -->
+      <div id="cd-signup">
+        <form class="cd-form">
+          <div class="lined-text"><span>กรุณาเลือกประเภทที่ปรึกษา</span>
+            <hr>
+          </div>
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 type-main-con-loginregis" align="center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class=" col-lg-4  col-md-4 col-sm-4 col-xs-12" style="padding-left: 0px;">
+                <div class="col-xs-12 type-con-loginregis"> <a href="register1.html">
+                  <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12"> <img src="assets/img/icon-type-login1.png"> </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <p>ที่ปรึกษาอิสระ</p>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 no-padding-left" >
+                <div class="col-xs-12 type-con-loginregis"> <a href="register2.html">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <img src="assets/img/icon-type-login2.png"> </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <p>ที่ปรึกษาสถาบันการศึกษา</p>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12  no-padding-left">
+                <div class="col-xs-12 type-con-loginregis"> <a href="register1.html">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <img src="assets/img/icon-type-login3.png"> </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <p>ที่ปรึกษาองค์กรของรัฐ</p>
+                  </div>
+                  </a> </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class=" col-lg-4  col-md-4 col-sm-4 col-xs-12 no-padding-left">
+                <div class="col-xs-12 type-con-loginregis"> <a href="register4.html">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <img src="assets/img/icon-type-login4.png"> </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <p>ที่ปรึกษาห้างหุ้นส่วนหรือบริษัท</p>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class=" col-lg-4  col-md-4 col-sm-4 col-xs-12 no-padding-left">
+                <div class="col-xs-12 type-con-loginregis"> <a href="register5.html">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <img src="assets/img/icon-type-login5.png"> </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <p>ที่ปรึกษาสมาคม</p>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class=" col-lg-4  col-md-4 col-sm-4 col-xs-12  no-padding-left">
+                <div class="col-xs-12 type-con-loginregis"> <a href="register6.html">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <img src="assets/img/icon-type-login6.png"> </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <p>ที่ปรึกษามูลนิธิ</p>
+                  </div>
+                  </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <div style="min-width: 30%; max-width: 30%; margin-left: 5px; margin-top: 10px; display: inline-table">
+              <div class="regis-detail" style="padding: 10px;"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="cd-reset-password">
+        <form class="cd-form">
+          <div class="lined-text"><span>หากคุณลืมรหัสผ่าน  กรูณากรอกอีเมล์ของคุณที่ใช้ในการสมัครลงช่องด้านล่างแล้วกดปุ่ม ลืมรหัสผ่าน</span>
+            <hr>
+          </div>
+          <p class="fieldset">ยืนยันด้วยอีเมล์
+            <input type="radio" id="ResetEmail" name="resetpass" onclick="ResetPasswordEmail();">
+          <div id="repasswordemail" style="display: none;">
+            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="อีเมล์">
+          </div>
+          </p>
+          <p class="fieldset" > ยืนยันด้วยเบอร์โทร
+            <input type="radio" id="ResetTel" name="resetpass" onclick="ResetPasswordTel();">
+          <div id="repasswordtel" style="display: none;">
+            <input class="full-width has-padding has-border" id="reset-tel" type="email" placeholder="เบอร์โทรศัพท์">
+          </div>
+          </p>
+          <p class="fieldset" > ยืนยันด้วยเอกสาร
+            <input type="radio" id="ResetFile" name="resetpass" onclick="ResetPasswordFile();">
+          <div id="repasswordfile" style="display: none;">
+            <input class="full-width has-padding has-border " id="reset-file1" type="email" placeholder="อีเมล์" style="margin-bottom: 10px;">
+            <input class="full-width has-padding has-border" id="reset-file2" type="text" placeholder="เบอร์โทรศัพท์" style="margin-bottom: 10px;">
+            <div class="Resetpass-upload-button1 btn btn-primary">เลือกไฟล์</div>
+            <input class="ResetPass-file-upload1" type="file" accept="image/*" style="display:none">
+            <input type="hidden" id="hf_reset_file2" value="">
+          </div>
+          <span class="cd-error-message">ผิดพลาด</span>
+          </p>
+          <p class="fieldset ">
+            <input class="full-width has-padding " type="submit" value="ลืมรหัสผ่าน">
+          <div class="fieldset cd-form-bottom-message button-login-forgot"><a href="javascript:void(0);">กลับไปเข้าสู่ระบบ</a></div>
+          </p>
+        </form>
+      </div>
+      <!-- cd-reset-password --> 
+      <a href="javascript:void(0);" class="cd-close-form">ปิด</a> </div>
+    <!-- cd-user-modal-container --> 
+  </div>
+  <!-- cd-user-modal --> 
+  <!-- End Login/Reg Modal Box --> 
+</div>
+<!--/wrapper--> 
+
+
+<!-- JS Global Compulsory --> 
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script> 
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script> 
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<!-- JS Implementing Plugins --> 
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script> 
+<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script> 
+<script type="text/javascript" src="assets/plugins/modernizr.js"></script> 
+<script type="text/javascript" src="assets/plugins/login-signup-modal-window/js/main.js"></script> <!-- Gem jQuery --> 
+<script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script> 
+<script type="text/javascript" src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script> 
+<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script> 
+<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/greensock.js"></script> 
+<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/layerslider.transitions.js"></script> 
+<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/layerslider.kreaturamedia.jquery.js"></script> 
+<!-- JS Customization --> 
+<script type="text/javascript" src="assets/js/custom.js"></script> 
+<!-- JS Page Level --> 
+<script type="text/javascript" src="assets/js/app.js"></script> 
+<script type="text/javascript" src="assets/js/plugins/fancy-box.js"></script> 
+<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script> 
+<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script> 
+<script type="text/javascript" src="assets/js/plugins/parallax-slider.js"></script> 
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			App.initCounter();
+			App.initParallaxBg();
+			MSfullWidth.initMSfullWidth();
+			StyleSwitcher.initStyleSwitcher();
+			App.initParallaxBg();
+			FancyBox.initFancybox();
+			OwlCarousel.initOwlCarousel();
+		});
+	</script> 
+
+<!-- JS Implementing Plugins --> 
+<script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script> 
+<script src="assets/plugins/master-slider/masterslider/masterslider.min.js"></script> 
+<script src="assets/plugins/master-slider/masterslider/jquery.easing.min.js"></script> 
+<script type="text/javascript" src="assets/plugins/counter/waypoints.min.js"></script> 
+<script type="text/javascript" src="assets/plugins/counter/jquery.counterup.min.js"></script> 
+
+<!-- JS Page Level --> 
+<script type="text/javascript" src="assets/js/plugins/master-slider-fw.js"></script> 
+<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script> 
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script> 
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script> 
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script> 
+
+<!-- Morris --> 
+<script src="assets/js/graph/plugins/morris/raphael-2.1.0.min.js"></script> 
+<script src="assets/js/graph/plugins/morris/morris.js"></script> 
+
+<!-- Custom and plugin javascript --> 
+<script src="assets/js/graph/plugins/pace/pace.min.js"></script> 
+<script type="text/javascript" src="assets/js/plugins/datepicker.js"></script> 
+
+<!-- Morris demo data--> 
+<script src="assets/js/demo/morris-demo.js"></script> 
+
+<!--[if lt IE 9]>
+	<script src="assets/plugins/respond.js"></script>
+	<script src="assets/plugins/html5shiv.js"></script>
+	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<![endif]--> 
+
+<!----------- New javescript Function Start-------------> 
+<script type="text/javascript" src="assets/js/jquery.multi-select.js"></script> 
+<script type="text/javascript">
+				// run pre selected options
+				$('#pre-selected-options').multiSelect();
+			</script> 
+<script type="text/javascript">
+				// run pre selected options
+				$('#pre-selected-options2').multiSelect();
+			</script> 
+<!----------- New javescript Function End------------->
+</body>
+</html>

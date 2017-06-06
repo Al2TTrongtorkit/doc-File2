@@ -1,0 +1,2970 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>ศูนย์ข้อมูลที่ปรึกษา กระทรวงการคลัง</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- Font -->
+    <link href="assets/css/fonts/kanit/css/fonts.css" rel="stylesheet">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grahp.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v8.css">
+
+
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/login-signup-modal-window/css/style.css">
+    <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
+    <link rel="stylesheet" href="assets/plugins/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css">
+
+    <link rel="stylesheet" href="assets/plugins/master-slider/masterslider/style/masterslider.css">
+    <link rel='stylesheet' href="assets/plugins/master-slider/masterslider/skins/black-2/style.css">
+
+    <!--    <link rel="stylesheet" href="assets/js/graph/plugins/morris/morris-0.4.3.min.css">
+-->
+
+
+
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+
+    <link rel="stylesheet" href="assets/css/new_style.css">
+
+
+	<style type="text/css">
+		html { height:100%; }
+		body { height:100%; overflow-x:hidden; margin:0; padding:0;}
+		body.header-fixed-space-v2 {
+			padding-top: 0px;
+		}
+		.wrapper {
+			padding:15px;
+		}
+	</style>
+
+</head>
+
+<body class="header-fixed header-fixed-space-v2">
+		<div class="wrapper">
+
+			<div class="row">
+				<div class="col-md-12">
+					<span class="h4">ขึ้นทะเบียนที่ปรึกษา</span>
+					<button class="btn btn-default pull-right" type="button" data-toggle="tooltip" data-placement="top" title="แก้ไข"><i class="fa fa-pencil"></i> เปิดการแก้ไขข้อมูล</button>
+				</div>
+				<!-- Accordion v1 -->
+				<div class="col-md-12">
+					<div class="panel-group acc-v1" id="accordion-1">
+						<div class="panel panel-default" id="t1">
+							<div class="panel-heading">
+								<h4 class="panel-title" style="color:#fff"><a class="accordion-toggle1" data-toggle="collapse" id="bt1" data-parent="#accordion-1" href="#collapse-One"><span class="bordercicle bordercicle1-x">1</span>  ข้อมูลทั่วไปการจดะเบียนที่ปรึกษานิติบุคคล </a> </h4>
+							</div>
+							<div id="collapse-One" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-12" style="padding: 0px;">
+											<form class="" role="form">
+												<div class="row lineheight">
+													<div id="entitytype_1" style="display: none">
+														<section class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+															<div class="form-group">
+																<label class="control-label"> ประเภทที่ปรึกษา </label>
+																<select class="form-control" name="typecon" required>
+																	<option value="">เลือกประเภทที่ปรึกษา</option>
+																	<option value="1">ที่ปรึกษานิติบุคคล</option>
+																</select>
+															</div>
+														</section>
+														<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+															<div class="form-group">
+																<label class="control-label"> ประเภทนิติบุคคล </label>
+																<select class="form-control" name="typeentity" required>
+																	<option value="">เลือกประเภทนิติบุคคล</option>
+																	<option value="1">ห้างหุ้นส่วน</option>
+																	<option value="2">บริษัท</option>
+																</select>
+															</div>
+														</section>
+														<div class="form-group">
+															<div style="margin-left: 15px;">
+																<a class="btn btn-g btn-md" onClick="editcontype();" style="min-height: 34px; min-width: 71.1px; padding: 7px 13px 4px 13px;">บันทึก</a>
+																<a class="btn btn-u2 btn-md" onClick="editcontype();" style="min-height: 34px; min-width: 71.1px; padding: 7px 13px 4px 13px;">ยกเลิก</a>
+															</div>
+														</div>
+													</div>
+													<div id="entitytype_2">
+														<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+															<div class="form-group">
+																<label class="control-label"> ประเภทที่ปรึกษา</label><br> ที่ปรึกษานิติบุคคล
+															</div>
+														</section>
+														<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+															<div class="form-group">
+																<label class="control-label"> ประเภทนิติบุคคล </label><br> บริษัท
+															</div>
+														</section>
+														<div class="form-group">
+															<div style="margin-left: 15px;">
+																<a class="btn btn-warning btn-md" onClick="editcontype2();"><i class="fa fa-pencil"></i> แก้ไข</a>
+															</div>
+														</div>
+													</div>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group">
+															<label class="control-label">เลขทะเบียนสมาชิก</label>
+															<p>12345678</p>
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group">
+															<label class="control-label"> เลขทะเบียนนิติบุคคล <span style="color: red">*</span> </label>
+															<input type="number" class="form-control" placeholder="เลข 13 หลัก" required min="0" max="9999999999999" maxlength="13" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)">
+														</div>
+													</section>
+													<section class="col-lg-12 col-sm-12  col-md-12 col-xs-12">
+														<div class="form-group">
+															<label class=" control-label"> ชื่อหน่วยงาน <span style="color: red">*</span>  </label>
+															<input type="text" class="form-control" required>
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group">
+															<label class="control-label"> ชื่อย่อ <span style="color: red">*</span>  </label>
+															<input type="text" class="form-control" required>
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12 ">
+														<div class="form-group">
+															<label class="control-label"> วันที่จัดตั้ง <span style="color: red">*</span>  </label>
+															<input class="form-control " type="text" name="inceptionDate" id="inceptionDate" readonly style="background-color: #FFFFFF">
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group ">
+															<label class=" control-label"> ทุนจดทะเบียน <span style="color: red">*</span></label>
+															<input type="number" class="form-control">
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group ">
+															<label class="control-label"> ทุนที่ชำระแล้ว <span style="color: red">*</span></label>
+															<input type="number" class="form-control">
+														</div>
+													</section>
+													<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+														<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 pad-ad1">
+															<div class="form-group">
+																<label class="control-label"> เลขที่ตั้ง <span style="color: red">*</span> </label>
+																<textarea class="form-control" rows="5" required></textarea>
+															</div>
+														</div>
+														<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 pad-ad2">
+															<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12" style="padding: 0px;">
+																<div class="form-group">
+																	<label class="control-label"> จังหวัด <span style="color: red">*</span> </label>
+																	<select class="form-control" required>
+																		<option value="">เลือกจังหวัด</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12" style="padding: 0px;">
+																<div class="form-group">
+																	<label class="control-label"> เขต/อำเภอ <span style="color: red">*</span>  </label>
+																	<select class="form-control" required>
+																		<option value="">เลือกเขต/อำเภอ</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group">
+															<label class="control-label" required> แขวง/ตำบล <span style="color: red">*</span>  </label>
+															<select class="form-control">
+																<option value="">เลือกแขวง/ตำบล</option>
+															</select>
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group">
+															<label class="control-label"> รหัสไปรษณีย์ <span style="color: red">*</span> </label>
+															<input type="number" class="form-control" required min="0" max="99999" maxlength="5" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)">
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group">
+															<label class="control-label"> โทรศัพท์ <span style="color: red">*</span> </label>
+															<input type="number" class="form-control" placeholder="02xxxxxxx" required min="0" max="999999999" maxlength="9" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)">
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group">
+															<label class="control-label"> โทรสาร </label>
+															<input type="number" class="form-control" placeholder="02xxxxxxx" min="0" max="999999999" maxlength="9" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)">
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group">
+															<label class="control-label"> โทรศัพท์เคลื่อนที่ <span style="color: red">*</span></label>
+															<input type="number" class="form-control" placeholder="0xxxxxxxxx" required min="0" max="9999999999" maxlength="10" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)">
+														</div>
+													</section>
+													<section class="col-lg-6 col-sm-6  col-md-6 col-xs-12">
+														<div class="form-group ">
+															<label class=" control-label"> อีเมล์ <span style="color: red">*</span></label>
+															<input type="email" class="form-control" placeholder="email@example.com" required>
+														</div>
+													</section>
+													<section class="col-lg-12 col-sm-12  col-md-12 col-xs-12">
+														<div class="form-group ">
+															<label class=" control-label"> เว็บไซต์ </label>
+															<input type="url" class="form-control" placeholder="http://www.example.com">
+														</div>
+													</section>
+													<section class="col-lg-12 col-sm-12  col-md-12 col-xs-12">
+														<div class="form-group ">
+															<label class=" control-label"> ช่องทางการรับข่าวสาร     </label>
+															<label class="checkbox-inline">
+																<input type="checkbox"  value="option1"> ไปรษณีย์
+															</label>
+															<label class="checkbox-inline">
+																<input type="checkbox"  value="option2"> อีเมล์
+															</label>
+														</div>
+													</section>
+													<section class="col-lg-12 col-sm-12  col-md-12 col-xs-12">
+														<div class="buttom-line" style="margin-top: 0;padding-top:0 "></div>
+														<div class="row lineheight">
+															<div class="panel panel-grey margin-bottom-40">
+																<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6 ">
+																	<label class="control-label"> ข้อมูลใบประกอบวิชาชีพ   </label>
+																</div>
+																<div class="col-lg-8 col-md-8 col-sm-7 col-xs-6 ">
+																	<a class="btn-u teb-right" data-toggle="modal" data-target="#Professionalcertificate_add">เพิ่ม</a>
+																</div>
+
+																<div class="panel-body">
+																	<div class="row">
+																		<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+																			<div class="table-responsive">
+																				<table class="table table-bordered">
+																					<thead>
+																						<tr>
+																							<th width="5%">ลำดับ</th>
+																							<th width="17%">เลขที่</th>
+																							<th>ชื่อวิชาชีพ</th>
+																							<th width="17%">วันหมดอายุ</th>
+																							<th width="145px">เครื่องมือ</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td>1</td>
+																							<td>123456789012</td>
+																							<td>test</td>
+																							<td>01/01/2017</td>
+																							<td>
+																								<a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#Professionalcertificate_add"><i class="fa fa-pencil"></i> แก้ไข</a>
+																								<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="buttom-line"></div>
+														<div class="row lineheight ">
+															<div class="panel panel-grey margin-bottom-40">
+
+																<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6 "><label class="control-label"> วัตถุประสงค์   </label></div>
+																<div class="col-lg-8 col-md-8 col-sm-7 col-xs-6 "><a class="btn-u teb-right" data-toggle="modal" data-target="#objective_add">เพิ่ม</a></div>
+																<div class="panel-body">
+																	<div class="row">
+																		<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+																			<div class="table-responsive">
+																				<table class="table table-bordered">
+																					<thead>
+																						<tr>
+																							<th width="5%">ลำดับ</th>
+																							<th align="center">วัตถุประสงค์</th>
+																							<th align="center">สาขาที่ทำงาน</th>
+																							<th width="17%">เครื่องมือ</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td>1</td>
+																							<td style="text-align:left">40) ประกอบกิจการรับให้คำปรึกษาและเป็นที่ปรึกษาในการจัดทำบทเรียนออนไลน์ (e-learning) 41) ประกอบกิจการรับให้คำปรึกษาและเป็นที่ปรึกษาในการออกแบบและพัฒนาหลักสูตร 42) ประกอบกิจการรับให้คำปรึกษาและเป็นที่ปรึกษาในการออกแบบระบบเทคโนโลยีการ ศึกษา โปรแกรมภาษาและอุปกรณ์อื่นๆ สำหรับสถานศึกษา หน่วยราชการ รัฐวิสาหกิจ องค์กรภาคธุรกิจ และอุตสาหกรรมทุกประเภท</td>
+																							<td>ED</td>
+																							<td>
+																								<a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#objective_add"><i class="fa fa-pencil"></i> แก้ไข</a>
+																								<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+
+
+																</div>
+															</div>
+														</div>
+														<div class="buttom-line"></div>
+														<div class="row lineheight ">
+															<div class="panel panel-grey margin-bottom-40">
+																<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6 "><label class="control-label"> กรรมการ   </label></div>
+																<div class="col-lg-8 col-md-8 col-sm-7 col-xs-6 "><a class="btn-u teb-right" data-toggle="modal" data-target="#board_add">เพิ่ม</a></div>
+
+																<div class="panel-body">
+																	<div class="row">
+																		<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+																			<div class="table-responsive">
+																				<table class="table table-bordered">
+																					<thead>
+																						<tr>
+																							<th width="5%">ลำดับ</th>
+																							<th>เลประจำตัวประชาชน/Passport</th>
+																							<th>ชื่อ-นามสกุล</th>
+																							<th align="center">ผู้มีอำนาจลงนาม</th>
+																							<th width="17%">เครื่องมือ</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td width="5%">1</td>
+																							<td width="20%">1539900382807</td>
+																							<td style="text-align:left">นายภาณุพงศ์ ตรงต่อกิจ</td>
+																							<td><input type="checkbox" value="option3" checked disabled></td>
+																							<td>
+																								<a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#board_add"><i class="fa fa-pencil"></i> แก้ไข</a>
+																								<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="row">
+																		<div class="col-md-12 col-lg-12">
+																			<div class="table-responsive">
+																				<table class="table table-bordered">
+																					<thead>
+																						<tr>
+
+																							<th>ไทย (%)</th>
+																							<th>ต่างชาติ (%)</th>
+																							<th>รวม (%)</th>
+
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td>100%</td>
+																							<td>0%</td>
+																							<td>100%</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="buttom-line"></div>
+
+														<div class="row lineheight">
+															<div class="panel panel-grey margin-bottom-40">
+																<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6 "><label class="control-label "> หุ้น </label></div>
+																<div class="col-lg-8 col-md-8 col-sm-7 col-xs-6 "><a class="btn-u teb-right" data-toggle="modal" data-target="#stocks_add">เพิ่ม</a></div>
+
+																<div class="panel-body">
+																	<div class="row">
+																		<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+																			<div class="table-responsive">
+																				<table class="table table-bordered table-buttom">
+																					<thead>
+																						<tr>
+																							<th rowspan="2">ประเภทหุ้น</th>
+																							<th colspan="3">จำนวนหุ้น</th>
+																							<th colspan="3">จำนวนเสียง</th>
+																							<th rowspan="2" width="17%">เครื่องมือ</th>
+																						</tr>
+
+																						<tr>
+																							<th>ไทย</th>
+																							<th>ต่างชาติ</th>
+																							<th>รวม</th>
+																							<th>ไทย</th>
+																							<th>ต่างชาติ</th>
+																							<th>รวม</th>
+
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td>หุ้นสามัญ</td>
+																							<td>10,000</td>
+																							<td>5,000</td>
+																							<td>15,000</td>
+																							<td>10,000</td>
+																							<td>5,000</td>
+																							<td>15,000</td>
+																							<td>
+																								<a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#stocks_add"><i class="fa fa-pencil"></i> แก้ไข</a>
+																								<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td>หุ้น ก.</td>
+																							<td>10,000</td>
+																							<td>5,000</td>
+																							<td>15,000</td>
+																							<td>10,000</td>
+																							<td>5,000</td>
+																							<td>15,000</td>
+																							<td>
+																								<a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#stocks_add"><i class="fa fa-pencil"></i> แก้ไข</a>
+																								<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																							</td>
+
+																						</tr>
+																						<tr>
+																							<td>รวม</td>
+																							<td>20,000</td>
+																							<td>20,000</td>
+																							<td>30,000</td>
+																							<td>20,000</td>
+																							<td>20,000</td>
+																							<td>30,000</td>
+																							<td></td>
+
+																						</tr>
+																						<tr>
+																							<td>ร้อยละ</td>
+																							<td>100</td>
+																							<td>100</td>
+																							<td>100</td>
+																							<td>100</td>
+																							<td>100</td>
+																							<td>100</td>
+																							<td></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+												</div>
+												<div class="row teb-submit">
+													<button type="submit" class="form-control">ดำเนินการต่อ</button>
+												</div>
+
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" id="t2">
+							<div class="panel-heading">
+								<h4 class="panel-title" style="color:#FFFFFF"> <a class="accordion-toggle1 collapsed" id="bt2" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Two"><span class="bordercicle bordercicle1-x">2</span> ข้อมูลประวัติบุคลากรที่ปรึกษา </a> </h4>
+							</div>
+							<div id="collapse-Two" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="row">
+										<div class="row lineheight">
+											<div class="panel panel-grey margin-bottom-40">
+												<div class="col-lg-4 col-md-4 col-sm-5 col-xs-8 "><label class="control-label"> ข้อมูลประวัติบุคลากรที่ปรึกษา   </label></div>
+												<div class="col-lg-8 col-md-8 col-sm-7 col-xs-4 "><a class="btn-u teb-right" id="btn-profile-add">เพิ่ม</a></div>
+												<div class="panel-body">
+													<div class="row">
+														<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+															<div class="table-responsive">
+																<table class="table table-bordered">
+																	<thead>
+																		<tr>
+																			<th>ลำดับ</th>
+																			<th align="center">ชื่อบุคลากร</th>
+																			<th align="center">สาขาที่ทำงาน</th>
+																			<th align="center">ประสบการณ์ที่ปรึกษาตามเกณฑ์คุณวุฒิ</th>
+																			<th width="17%">เครื่องมือ</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>1</td>
+																			<td style="text-align:left">น.ส. อังคณา อัศรานุรักษ์</td>
+																			<td>ED</td>
+																			<td> 7 ปี 0 เดือน 0 วัน</td>
+																			<td>
+																				<a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#personnelprofile_add"><i class="fa fa-pencil"></i> แก้ไข</a>
+																				<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="row teb-submit">
+														<button type="submit" class="form-control">ดำเนินการต่อ</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" id="t3">
+							<div class="panel-heading">
+								<h4 class="panel-title" style="color:#FFFFFF"> <a class="accordion-toggle1 collapsed" id="bt3" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Three"><span class="bordercicle bordercicle1-x">3</span> ประสบการณ์โครงการ </a> </h4>
+							</div>
+							<div id="collapse-Three" class="panel-collapse collapse ">
+								<div class="panel-body">
+									<div class="row">
+										<div class="row lineheight buttom-line">
+											<div class="panel panel-grey margin-bottom-40">
+												<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6 "><label class="control-label"> ข้อมูลประสบการณ์โครงการ </label></div>
+												<div class="col-lg-8 col-md-8 col-sm-7 col-xs-6 "><a class="btn-u teb-right" id="btn-project-add">เพิ่ม</a></div>
+												<div class="panel-body">
+													<div class="row">
+														<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+															<div class="table-responsive">
+																<table class="table table-bordered">
+																	<thead>
+																		<tr>
+																			<th>ลำดับ</th>
+																			<th align="center">ชื่อโครงการ</th>
+																			<th align="center">สาขาที่ทำงานในโครงการ</th>
+																			<th align="center">มูลค่าสัญญาจ้าง (บาท)</th>
+																			<th width="17%">เครื่องมือ</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>1</td>
+																			<td style="text-align:left">ออกแบบเว็บไซต์และระบบลงทะเบียน</td>
+																			<td>TE TO PO</td>
+																			<td> 42,800.00</td>
+																			<td>
+																				<a class="btn btn-warning btn-xs" id="btn-project-edit"><i class="fa fa-pencil"></i> แก้ไข</a>
+																				<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row lineheight ">
+											<div class="panel panel-grey margin-bottom-40">
+												<label class="  col-md-4 control-label"> ระดับขีดความสามารถ <span class="field-tip"><i class="fa fa-question-circle-o" style="font-size: 18px;"  aria-hidden="true"></i><span class="tip-content">Put help text in here!</span></span>
+												</label>
+												<div class="panel-body">
+													<div class="row">
+														<div class="col-md-12 col-lg-12">
+															<div class="table-responsive">
+																<table class="table table-bordered">
+																	<thead>
+																		<tr>
+																			<th width="5%">ลำดับ</th>
+																			<th align="center">การบริการ</th>
+
+																			<th width="20%">
+																				ระดับ
+																			</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>1</td>
+																			<td style="text-align:left">8D: Information Technology Consultancy</td>
+																			<td>
+																				<select class="form-control" style="min-width: 150px;">
+																					<option>ไม่ระบุ</option>
+																					<option>4</option>
+																					<option>3</option>
+																					<option>2</option>
+																					<option>1</option>
+																					<option>0</option>
+																				</select>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td>1</td>
+																			<td style="text-align:left"> 8E: Management Information Systems</td>
+																			<td>
+																				<select class="form-control">
+																					<option>ไม่ระบุ</option>
+																					<option>4</option>
+																					<option>3</option>
+																					<option>2</option>
+																					<option>1</option>
+																					<option>0</option>
+																				</select>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td>1</td>
+																			<td style="text-align:left">8H: Computer Systems Design & implememtation</td>
+																			<td>
+																				<select class="form-control">
+																					<option>ไม่ระบุ</option>
+																					<option>4</option>
+																					<option>3</option>
+																					<option>2</option>
+																					<option>1</option>
+																					<option>0</option>
+																				</select>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td>1</td>
+																			<td style="text-align:left">8C: Computor Technology</td>
+																			<td>
+																				<select class="form-control">
+																					<option>ไม่ระบุ</option>
+																					<option>4</option>
+																					<option>3</option>
+																					<option>2</option>
+																					<option>1</option>
+																					<option>0</option>
+																				</select>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td>1</td>
+																			<td style="text-align:left">9F: Training and Transfer of Technology</td>
+																			<td>
+																				<select class="form-control">
+																					<option>ไม่ระบุ</option>
+																					<option>4</option>
+																					<option>3</option>
+																					<option>2</option>
+																					<option>1</option>
+																					<option>0</option>
+																				</select>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" id="t4">
+							<div class="panel-heading">
+								<h4 class="panel-title" style="color:#FFFFFF"> <a class="accordion-toggle1 collapsed" id="bt4" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Four"><span class="bordercicle bordercicle1-x">4</span> สรุปสถานะ </a> </h4>
+							</div>
+							<div id="collapse-Four" class="panel-collapse collapse ">
+
+								<div class="panel-body">
+									<div class="row">
+										<div class="row lineheight">
+											<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7 ">
+														<p>เลขทะเบียนสมาชิก </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p></p>
+													</div><br>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
+														<p>ชื่อที่ปรึกษา </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p>บริษัท วีวาสนาดี จำกัด </p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7 ">
+														<p>สถานะ </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p> </p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
+														<p>ประเภทที่ปรึกษา </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p>นิติบุคคล (บริษัท) </p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
+														<p>ระดับ (Rating) </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p>-</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
+														<p>สาขาที่จดทะเบียน </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p>-</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
+														<p>วันที่จดทะเบียนครั้งแรก </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p>-</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
+														<p>วันที่หมดอายุ </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p>-</p>
+													</div>
+												</div>
+												<div class="row margin-bottom-15">
+													<div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
+														<p>ปรับปรุงข้อมูลล่าสุด </p>
+													</div>
+													<div class="col-lg-9 col-md-9 col-sm-8 col-xs-5">
+														<p>03/02/2560</p>
+													</div>
+												</div>
+												<div class="row lineheight ">
+													<div class="panel panel-grey margin-bottom-40">
+														<label class="  col-md-4 control-label"> สาขาที่จดทะเบียน </label>
+														<div class="panel-body">
+															<div class="row">
+																<div class="col-md-12 col-lg-12">
+																	<div class="table-responsive">
+																		<table class="table table-bordered">
+																			<thead>
+																				<tr>
+																					<th width="5%">ลำดับ</th>
+																					<th>โครงการ</th>
+																					<th>สาขา</th>
+																					<th>ความเชี่ยวชาญ</th>
+																					<th>การบริการ</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>1</td>
+																					<td style="text-align: left">ปรับปรุงระบบเว็บไซต์ของเทศบาลเมืองลาดสวาย</td>
+																					<td style="text-align: left">TE</td>
+																					<td>I500, Q102</td>
+																					<td>8C, 8D, 8H, 8E</td>
+																				</tr>
+																				<tr>
+																					<td>2</td>
+																					<td style="text-align: left">จัดทำเว็บไซต์ภายใต้ชื่อ www.integralec.co.th</td>
+																					<td style="text-align: left">TE</td>
+																					<td>I500, Q101</td>
+																					<td>8C, 8E, 8D, 8H</td>
+																				</tr>
+																				<tr>
+																					<td>3</td>
+																					<td style="text-align: left">ออกแบบและสร้าง (เขียน) โปรแกรมเฉพาะ Application Software ทั้งสองภาษา สำหรับศูนย์เรียนรู้การเมืองและการเลือกตั้งอาเซียน</td>
+																					<td style="text-align: left">TE</td>
+																					<td>I500, Q102</td>
+																					<td>8C, 8E, 8H, 8D</td>
+																				</tr>
+																				<tr>
+																					<td>4</td>
+																					<td style="text-align: left">จัดทำบทเรียนออนไลน์หลักสูตรการควบคุมคุณภาพการขาย และอบรมการใช้งานระบบ Moodle</td>
+																					<td style="text-align: left">ED</td>
+																					<td>C502, C503, C404, C500</td>
+																					<td>9F</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row lineheight ">
+													<div class="panel panel-grey margin-bottom-40">
+														<label class="  col-md-4 control-label"> ระดับขีดความสามารถ   </label>
+														<div class="panel-body">
+															<div class="row">
+																<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+																	<div class="table-responsive">
+																		<table class="table table-bordered">
+																			<thead>
+																				<tr>
+																					<th width="5%">ลำดับ</th>
+																					<th align="center">การบริการ</th>
+																					<th>ระดับ</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>1</td>
+																					<td style="text-align:left">8D: Information Technology Consultancy</td>
+																					<td>0</td>
+																				</tr>
+																				<tr>
+																					<td>2</td>
+																					<td style="text-align:left"> 8E: Management Information Systems</td>
+																					<td>0</td>
+																				</tr>
+																				<tr>
+																					<td>3</td>
+																					<td style="text-align:left">8H: Computer Systems Design & implememtation</td>
+																					<td>0</td>
+																				</tr>
+																				<tr>
+																					<td>4</td>
+																					<td style="text-align:left">8C: Computor Technology</td>
+																					<td>0</td>
+																				</tr>
+																				<tr>
+																					<td>5</td>
+																					<td style="text-align:left">9F: Training and Transfer of Technology</td>
+																					<td>0</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" id="t5">
+							<div class="panel-heading">
+								<h4 class="panel-title" style="color:#FFFFFF"> <a class="accordion-toggle1 collapsed" id="bt5" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Five"><span class="bordercicle bordercicle1-x">5</span> เอกสารประกอบการพิจารณา  </a> </h4>
+							</div>
+							<div id="collapse-Five" class="panel-collapse collapse ">
+								<div class="panel-body">
+									<div class="row">
+										<div class="row lineheight ">
+											<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-padding">
+												<div class="panel panel-grey margin-bottom-40">
+													<label class="  col-md-12 control-label"> เอกสารประกอบการพิจารณา-ประเภทที่ปรึกษา : นิติบุคคล (บริษัท)</label>
+													<div class="panel-body">
+														<div class="row">
+															<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+																<div class="table-responsive">
+																	<table class="table table-bordered">
+																		<thead>
+																			<tr>
+																				<th width="5%">ลำดับ</th>
+																				<th width="" align="center">รายการ</th>
+																				<th width="">Download</th>
+																				<th width="15%">Upload</th>
+																				<th width=""> ลบ</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td>1</td>
+																				<td style="text-align: left;">หนังสือแสดงความประสงค์การจด/ต่อ/เพิ่มเติมผลงาน/การถอนชื่อ/การปรับปรุงข้อมูล/การเปลี่ยนแปลงข้อมูล หรือการยกเลิกทะเบียนที่ปรึกษา</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+
+																			</tr>
+																			<tr>
+																				<td>2</td>
+																				<td style="text-align: left;">หนังสือรับรองการจด/ต่อ/เพิ่มเติมผลงานที่ปรึกษา ฉบับล่าสุด (กรณีขอต่อ/เพิ่มเติมผลงานที่ปรึกษาหากหนังสือรับรองสูญหาย ต้องแนบหนังสือแจ้งความแทน)</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+
+																			</tr>
+																			<tr>
+																				<td>3</td>
+																				<td style="text-align: left;">สำเนาหนังสือรับรองการจดทะเบียนจัดตั้งบริษัทหรือห้างหุ้นส่วนนิติบุคคลแล้วแต่กรณีหนังสือต้องระบุวัตถุประสงค์ของการจัดตั้งการเป็นที่ปรึกษาให้ชัดเจน (นายทะเบียนรับรองไม่เกิน 6 เดือน)</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+
+																			</tr>
+																			<tr>
+																				<td>4</td>
+																				<td style="text-align: left;">สำเนาหนังสือบริคณห์สนธิ(กรณีบริษัท)</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+
+																			</tr>
+																			<tr>
+																				<td>5</td>
+																				<td style="text-align: left;"> สำเนาหนังสือแสดงรายชื่อผู้ถือหุ้น ข้อบังคับ และสิทธิ์ในการออกเสียงของบริษัท(นายทะเบียนรับรองไม่เกิน 6 เดือน) กรณี
+																					<br>1. เป็นบริษัทจำกัด ต้องส่งสำเนาบัญชีรายชื่อผู้ถือหุ้น (บอจ.5)<br> 2. เป็นบริษัทมหาชนจำกัด ต้องส่งสำเนาบัญชีรายชื่อผู้ถือหุ้นหรือบัญชีรายชื่อผู้ถือหุ้นของบริษัท มหาชน จ ากัด (บมจ.006)
+																				</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+
+																			</tr>
+																			<tr>
+																				<td>6</td>
+																				<td style="text-align: left;"> สำเนาบัตรประจำตัวผู้เสียภาษีอากร</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+
+																			</tr>
+																			<tr>
+																				<td>7</td>
+																				<td style="text-align: left;"> สำเนาใบทะเบียนภาษีมูลค่าเพิ่ม</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+
+																			</tr>
+																			<tr>
+																				<td>8</td>
+																				<td style="text-align: left;"> สำเนาใบประกอบวิชาชีพ ใบสมาชิกสมาคมวิศวกรที่ปรึกษา หรือสมาคมต่างๆ ที่เกี่ยวข้อง (ถ้ามี)</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+																			</tr>
+																			<tr>
+																				<td>9</td>
+																				<td style="text-align: left;"> สำเนาสัญญาจ้างที่ปรึกษา สำเนาใบสั่งซื้อสั่งจ้าง หนังสือรับรองผลงานที่เกี่ยวข้องกับการเป็นที่ปรึกษา หรือหลักฐานอื่นใดตามที่ศูนย์ข้อมูลที่ปรึกษากำหนด โดยต้องเป็นโครงการที่ดำเนินการแล้วเสร็จ ซึ่งจะต้องระบุลักษณะงาน วัตถุประสงค์ของโครงการ และขอบเขตการดำเนินโครงการอย่างละเอียด บุคลากรที่ดำเนินโครงการ จำนวนคน-เดือน (Man-month) อัตราค่าจ้าง ระยะเวลาดำเนินโครงการ และมูลค่าตามสัญญาจ้าง<br>( 1. กรณีเป็นสัญญาจ้างช่วง จะต้องมีหนังสือยกผลงานจากผู้จ้างช่วงให้กับผู้รับจ้างช่วง โดยมีการลงนามของทั้ง 2 ฝ่าย เพื่อใช้ประกอบการพิจารณา<br>2. กรณีเป็นสัญญาจ้างที่ร่วมกันทำหลายฝ่าย จะต้องระบุรายละเอียดของผลงาน ลักษณะงาน วัตถุประสงค์ ของโครงการ กิจกรรมและขอบเขตการดำเนินโครงการให้ชัดเจน พร้อมทั้งมีการลงนามร่วมกันทุกฝ่าย)</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td style="text-align: left"><label class="radio-inline">
+															<input type="radio"  value="option1" name="chkfileno-9"  onclick="chkfileno9_1();"> อัพโหลดผ่านระบบ
+														</label><br>
+																					<label class="radio-inline">
+															<input type="radio"  value="option2" name="chkfileno-9" onclick="chkfileno9_2();"> ยื่นเอกสารด้วยตนเอง
+														</label>
+																					<div id="showupload" style="display: none" align="center">
+
+																						<a class="btn-u2"><i class="fa fa-upload" ></i></a>
+																					</div>
+																				</td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+																			</tr>
+																			<tr>
+																				<td>10</td>
+																				<td style="text-align: left;"> เอกสารบุคลากรที่ปรึกษาของห้างหุ้นส่วนนิติบุคคลหรือบริษัท<br> 10.1 รูปถ่าย ขนาด 1 นิ้ว จ านวน 1 รูป<br> 10.2 สำเนาบัตรประจำตัวประชาชน และ/หรือบัตรอื่นใดที่ทางราชการออกให้<br> 10.3 สำเนาทะเบียนบ้าน<br> 10.4 สำเนาปริญญาบัตร หรือสำเนาแสดงผลการศึกษา (ทุกระดับการศึกษา)<br> 10.5 ประวัติการทำงานโดยละเอียด ระบุตำแหน่งงาน ลักษณะงาน รายละเอียดงาน วัน-เดือน-ปี ที่เริ่มต้นและสิ้นสุดงาน
+																					<br> 10.6 สำเนาใบประกอบวิชาชีพ ใบสมาชิกสมาคมวิศวกรที่ปรึกษา หรือสมาคมต่างๆ ที่เกี่ยวข้อง (ถ้ามี)</td>
+																				<td><a class="btn-u2"><i class="fa fa-download" ></i></a></td>
+																				<td><a class="btn-u2"><i class="fa fa-upload" ></i></a></td>
+																				<td><a class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" id="t6">
+							<div class="panel-heading">
+								<h4 class="panel-title" style="color:#FFFFFF"> <a class="accordion-toggle1 collapsed" id="bt6" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Six"><span class="bordercicle bordercicle1-x">6</span> ยื่นขอขึ้นทะเบียน</a> </h4>
+							</div>
+							<div id="collapse-Six" class="panel-collapse collapse ">
+								<div class="panel-body">
+									<div class="row">
+										<div class="row lineheight ">
+											<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+												<h4>ตรวจสอบความถูกต้องและความครบถ้วนของข้อมูล <a href="#">ที่นี่</a></h4>
+												<input type="checkbox" value="option1"> ยอมรับ <a href="#" style="color:rgba(0,13,255,1.00)">เงื่อนไข</a> และข้อมูลทั้งหมดเป็นความจริง
+
+											</div>
+
+
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการขึ้นทะเบียน</button>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion v1 -->
+			</div>
+		</div>
+<!-- End Success Forms -->
+
+<!-- Modal -->
+	<!------------ All Modal Form In collapse-One Start ---------------->
+		<!-- Modal Professionalcertificate_add Edit Start-->
+		<div class="modal fade bs-example-modal-lg" id="Professionalcertificate_add" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h5 class="modal-title">เพิ่มข้อมูลใบประกอบวิชาชีพ</h5>
+					</div>
+					<form>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-xs-12 margin-bottom-10">
+									<label>เลขที่ใบประกอบวิชาชีพ <span style="color: red">*</span></label>
+									<input class="form-control" type="text" required />
+								</div>
+								<div class="col-lg-6 col-md-6 col-xs-12 margin-bottom-10">
+									<label>ชื่อวิชาชีพ <span style="color: red">*</span></label>
+									<input class="form-control" type="text" required />
+								</div>
+								<div class="col-lg-6 col-md-6 col-xs-12">
+									<label>วันหมดอายุ <span style="color: red">*</span></label>
+									<input class="form-control" type="text" id="Certificate_expireddate" required readonly style="background-color: #FFFFFF" />
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn-g btnsubmitbutton">บันทึก</button>
+							<button type="button" class="btn-cancel btn-u-default" data-dismiss="modal">ยกเลิก</button>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Professionalcertificate_add Edit End-->
+
+		<!-- Modal objective_add Edit Start-->
+		<div class="modal  fade bs-example-modal-lg" id="objective_add" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<form>
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h5 class="modal-title">เพิ่มข้อมูลวัตถุประสงค์ </h5>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-12 col-lg-12 col-xs-12" style="margin-bottom: 10px;">
+									<label>วัตถุประสงค์ (ระบุวัตถุประสงค์ที่เป็นที่ปรึกษา ตามเอกสารจัดตั้งหน่วยงาน) <span style="color: red">*</span> </label>
+									<textarea class="form-control" required></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 col-lg-12 col-xs-12">
+									<label>เลือกสาขาที่ตรงกับวัตถุประสงค์</label>
+									<select class="form-control" id="pre-selected-options" multiple>
+										<option value="AG" selected>AG:Agriculture And Rural Development Sector</option>
+										<option value="CO">CO:Construction Industry Development Sector</option>
+										<option value="ED">ED:Education Sector</option>
+										<option value="EG">EG:Energy Sector</option>
+										<option value="EV">EV:Environment Sector</option>
+										<option value="FI">FI:Financial Sector</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn-g btnsubmitbutton">บันทึก</button>
+							<button type="button" class="btn-cancel btn-u-default" data-dismiss="modal">ยกเลิก</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Modal objective_add Edit End-->
+
+		<!-- Modal Professionalcertificate_add Edit Start-->
+		<div class="modal fade bs-example-modal-lg" id="board_add" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<form>
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h5 class="modal-title">เพิ่มข้อมูลกรรมการ</h5>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-12 col-lg-12 col-xs-12">
+									<label>เลขบัตรประจำตัวประชาชน/Passport <span style="color: red;">*</span> </label>
+									<p><input class="form-control" type="text" required /></p>
+								</div>
+								<div class="col-md-2 col-lg-2 col-xs-12" style="margin-bottom: 10px;">
+									<label>คำนำหน้า <span style="color: red;">*</span></label>
+									<select class="form-control" required>
+										<option>นาย</option>
+										<option>นาง</option>
+										<option>นางสาว</option>
+									</select>
+								</div>
+								<div class="col-md-4 col-lg-4 col-xs-12">
+									<label>ชื่อ <span style="color: red;">*</span></label>
+									<p><input class="form-control" type="text" required /></p>
+								</div>
+								<div class="col-md-6 col-lg-6 col-xs-12">
+									<label>นามสกุล <span style="color: red;">*</span></label>
+									<p><input class="form-control" type="text" required /></p>
+								</div>
+								<div class="col-md-3 col-lg-3 col-xs-12" style="margin-bottom: 10px;">
+									<label>สัญชาติ</label><br>
+									<label class="radio-inline">
+										<input type="radio"  value="option1" name="board_nation" onClick="BoardOtherNationOff();"> ไทย
+									</label>
+									<label class="radio-inline">
+										<input type="radio"  value="option2" name="board_nation" onClick="BoardOtherNationOn();"> ต่างชาติ
+									</label>
+								</div>
+								<div class="col-md-3 col-lg-3 col-xs-12">
+									<div id="BoardOtherNationInput" style="margin:0;padding:0;display:none; margin-bottom: 10px;">
+										<label>โปรดระบุ</label>
+										<input type="text" class="form-control" value="" name="board_nation_other" placeholder="จีน, ญี่ปุ่น, ฝรั่งเศส">
+									</div>
+								</div>
+								<div class="col-md-12 col-lg-12 col-xs-12">
+									<label>ผู้มีอำนาจลงนาม</label><br>
+									<label class="checkbox-inline">
+										<input type="checkbox"  value="option3"> ผู้มีอำนาจลงนาม
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn-g btnsubmitbutton">บันทึก</button>
+							<button type="button" class="btn-cancel btn-u-default" data-dismiss="modal">ยกเลิก</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Professionalcertificate_add Edit End-->
+
+		<!-- Modal stocks_add Edit Start-->
+		<div class="modal fade bs-example-modal-lg" id="stocks_add" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<form>
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h5 class="modal-title">เพิ่มข้อมูลหุ้น</h5>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-xs-12  margin-bottom-10">
+									<label>ประเภทหุ้น <span style="color: red;">*</span></label>
+									<select class="form-control">
+										<option>หุ้นสามัญ</option>
+										<option>หุ้น ก.</option>
+										<option>หุ้น ข.</option>
+										<option>หุ้นอื่นๆ</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-xs-12  margin-bottom-10">
+									<label>จำนวนหุ้น (ไทย) <span style="color: red;">*</span></label>
+									<input class="form-control" type="number" required />
+								</div>
+								<div class="col-lg-6 col-md-6 col-xs-12 margin-bottom-10-xs">
+									<label>จำนวนหุ้นต่อเสียง (ไทย) <span style="color: red;">*</span></label>
+									<input class="form-control" type="number" required />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-xs-12 margin-bottom-10-xs">
+									<label>จำนวนหุ้น (ต่างชาติ) <span style="color: red;">*</span></label>
+									<input class="form-control" type="number" required />
+								</div>
+								<div class="col-lg-6 col-md-6 col-xs-12">
+									<label>จำนวนหุ้นต่อเสียง (ต่างชาติ) <span style="color: red;">*</span></label>
+									<input class="form-control" type="number" required />
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn-g btnsubmitbutton">บันทึก</button>
+							<button type="button" class="btn-cancel btn-u-default" data-dismiss="modal">ยกเลิก</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Modal stocks_add Edit End-->
+	<!------------ All Modal Form In collapse-One end ---------------->
+
+	<!------------ All Modal Form In collapse-Two Start ---------------->
+		<!-- Modal personnelprofile_add Edit Start-->
+		<input type="hidden" id="hf-profile">
+		<div class="modal fade bs-example-modal-lg" id="personnelprofile_add" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" id="btn-profile-close">&times;</button>
+						<h5 class="modal-title" id="profile-head-title">ข้อมูลประวัติบุคลากร</h5>
+					</div>
+					<div class="modal-body">
+						<div id="profile">
+							<div class="panel-group acc-v2 " id="accordionprofile-1" style="margin: 0px;">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a class="accordion-toggle-modal collapsed" data-toggle="collapse" data-parent="#accordionprofile-1" href="#collapseprofile-One"><span >1. </span>ข้อมูลประวัติบุคลากร </a> </h4>
+									</div>
+									<div id="collapseprofile-One" class="panel-collapse collapse">
+										<div class="panel-body" style="padding: 15px 0px;">
+											<form class="sky-form">
+												<div class="row">
+													<div class="col-lg-12 col-md-12 col-xs-12 margin-bottom-10">
+														<label>รูปประจำตัว</label>
+														<img class="profile-pic img-preview img-preview-sm user_pic2 margin-bottom-10" src="assets/img/demo.jpg">
+														<div class="add-upload-button2 btn btn-primary">เลือกไฟล์</div>
+														<input class="add-file-upload2" type="file" accept="image/*" style="display:none">
+														<input type="hidden" id="hf_add_img_src2" value="">
+													</div>
+													<div class="col-lg-2 col-md-2 col-xs-12">
+														<div class="form-group">
+															<label class="control-label">คำนำหน้าชื่อ <span style="color: red;">*</span></label>
+															<select class="form-control" required>
+																<option>นาย</option>
+																<option>นาง</option>
+																<option>นางสาว</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-4 col-md-4 col-xs-12">
+														<div class="form-group ">
+															<label class="control-label"> ชื่อ <span style="color: red;">*</span> </label>
+															<input class="form-control" type="text" required />
+														</div>
+													</div>
+													<div class="col-lg-6 col-md-6 col-xs-12">
+														<div class="form-group ">
+															<label class="control-label"> นามสกุล <span style="color: red;">*</span> </label>
+															<input class="form-control" type="text" required />
+														</div>
+													</div>
+													<div class="col-lg-6 col-md-6 col-xs-12">
+														<div class="form-group ">
+															<label class="control-label"> วัน/เดือน/ปีเกิด </label>
+															<input class="form-control" id="profile_birthday" type="text" readonly style="background-color:#FFF " />
+														</div>
+													</div>
+													<div class="col-lg-6 col-md-6 col-xs-12">
+														<div class="form-group ">
+															<label class="control-label"> เลขบัตรประจำตัวประชาชน/Passport <span style="color: red;">*</span> </label>
+															<input class="form-control" type="text" required />
+														</div>
+													</div>
+													<div class="col-lg-12 col-md-12 col-xs-12">
+														<div class="form-group ">
+															<label class="control-label"> เพศ <span style="color: red;">*</span></label><br>
+															<label class="radio-inline">
+																<input type="radio"  value="option1" name="sex" checked> ชาย
+															</label>
+															<label class="radio-inline">
+																<input type="radio"  value="option2" name="sex" > หญิง
+															</label>
+														</div>
+													</div>
+													<div class="col-lg-12 col-md-12 col-xs-12 margin-bottom-10">
+														<div class="form-group ">
+															<div class="col-lg-3 col-md-3 col-xs-12 no-padding">
+																<label class="control-label"> สัญชาติ <span style="color: red">*</span> </label><br>
+																<label class="radio-inline">
+																	<input type="radio"  value="option1" name="nation" onClick="OtherNationOff();" > ไทย
+																</label>
+																<label class="radio-inline">
+																	<input type="radio"  value="option2" name="nation" onClick="OtherNationOn();"> ต่างชาติ 
+																</label>
+															</div>
+															<div class="col-lg-3 col-md-3 col-xs-12 padding-top-10-xs" style="padding-left: 0px; ">
+																<div id="otherNationInput" style="margin:0;padding:0;display:none;">
+																	<label>โปรดระบุ</label>
+																	<input type="text" class="form-control" placeholder="จีน, ญี่ปุ่น, ฝรั่งเศส" id="otherNation" value="">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-12 col-md-12 col-xs-12 margin-bottom-10">
+														<div class="form-group ">
+															<div class="col-lg-3 col-md-3 col-xs-12 no-padding ">
+																<label class="control-label"> ความสามารถทางภาษา <span style="color: red">*</span> </label><br>
+																<label class="checkbox-inline">
+																	<input type="checkbox"  value="1" name="lang_skill"> ไทย
+																</label>
+																<label class="checkbox-inline">
+																	<input type="checkbox"  value="2" name="lang_skill"> อังกฤษ
+																</label>
+																<label class="checkbox-inline">
+																	<input type="checkbox" id="otherlangskill"  value="3" name="lang_skill" > อื่นๆ
+																</label>
+															</div>
+															<div class="col-lg-3 col-md-3 col-xs-12 padding-top-10-xs" style="padding-left: 0px;">
+																<div id="OtherLanguageInput" style="margin:0;padding:0;display:none;">
+																	<label>โปรดระบุ</label>
+																	<input type="text" class="form-control " id="OtherLanguage" placeholder="จีน, ญี่ปุ่น, ฝรั่งเศส" value="">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-12 col-md-12 col-xs-12 margin-bottom-10">
+														<div class="form-group ">
+															<div class="col-lg-3 col-md-3 col-xs-12 no-padding ">
+																<label class="control-label"> ประเภทบุคลากรที่ปรึกษา </label><br>
+																<label class="checkbox-inline">
+																	<input type="checkbox"  value="1" name="working_fulltime"> ทำงานประจำเต็มเวลา
+																</label>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6 col-md-6 col-xs-12">
+														<div class="form-group ">
+															<label class="control-label"> โทรศัพท์เคลื่อนที่ <span style="color: red">*</span> </label>
+															<input class="form-control" type="number" min="0" placeholder="0xxxxxxxxx" max="9999999999" maxlength="10" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" required />
+														</div>
+													</div>
+													<div class="col-lg-6 col-md-6 col-xs-12">
+														<div class="form-group ">
+															<label class="control-label"> อีเมล์ <span style="color: red">*</span> </label>
+															<input class="form-control" type="email" placeholder="email@example.com" required />
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a class="accordion-toggle-modal collapsed" data-toggle="collapse" data-parent="#accordionprofile-1" href="#collapseprofile-Two"><span >2. </span>ประวัติการศึกษา | ประสบการณ์การทำงาน | ประสบการณ์การเป็นที่ปรึกษา | ข้อมูลใบประกอบวิชาชีพ </a> </h4>
+									</div>
+									<div id="collapseprofile-Two" class="panel-collapse collapse">
+										<div class="panel-body" style="padding: 15px 0px;">
+											<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10  padding-0"><label class="control-label"> ประวัติการศึกษา (ประสบการณ์ที่ปรึกษาตามเกณฑ์คุณวุฒิ 0 ปี 0 เดือน 0 วัน)   </label></div>
+											<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 padding-0"><a class="btn-u teb-right" id="btn-Education-add">เพิ่ม</a></div>
+											<div class="row">
+												<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th width="5%">ลำดับ</th>
+																	<th> ระดับการศึกษา</th>
+																	<th>วุฒิการศึกษา</th>
+																	<th>สาขา</th>
+																	<th>สถาบันการศึกษา</th>
+																	<th width="12%">วันที่จบการศึกษา</th>
+																	<th width="17%">เครื่องมือ</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td style="text-align: left">ปริญญาโท</td>
+																	<td style="text-align: left">Master of Economics (ปริญญาโท)</td>
+																	<td style="text-align: left">เทคโนโลยีสื่อสารการศึกษา</td>
+																	<td style="text-align: left"> มหาวิทยาลัยศรีนครินวิโรฒ</td>
+																	<td> 31/12/2547</td>
+																	<td>
+																		<a class="btn btn-warning btn-xs" id="btn-Education-edit"><i class="fa fa-pencil"></i> แก้ไข</a>
+																		<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div class="buttom-line"></div>
+											<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10  padding-0"><label class="control-label"> ประสบการณ์การทำงาน  (ประสบการณ์การทำงาน 0 ปี 0 เดือน 0 วัน)   </label></div>
+											<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 padding-0"><a class="btn-u teb-right" id="btn-Experience-add">เพิ่ม</a></div>
+
+											<div class="row">
+												<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th width="5%">ลำดับ</th>
+																	<th>ชื่อบริษัท</th>
+																	<th>ตำแหน่ง</th>
+																	<th>ประเภทธุรกิจ</th>
+																	<th>วันที่เริ่มการทำงาน-วันที่สิ้นสุดการทำงาน</th>
+																	<th width="17%">เครื่องมือ</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td style="text-align: left">บริษัท วีวาสนาดี จำกัด</td>
+																	<td>ผู้จัดการโครงการ</td>
+
+																	<td> บริษัท</td>
+																	<td> 18/01/2556-ปัจจุบัน</td>
+																	<td>
+																		<a class="btn btn-warning btn-xs" id="btn-Experience-edit"><i class="fa fa-pencil"></i> แก้ไข</a>
+																		<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div class="buttom-line"></div>
+											<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10  padding-0"><label class="control-label"> ประสบการณ์การเป็นที่ปรึกษา (ประสบการณ์การเป็นที่ปรึกษา 0 ปี 0 เดือน 0 วัน )   </label></div>
+											<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 padding-0"><a class="btn-u teb-right" id="btn-Expeconsultant-add">เพิ่ม</a></div>
+
+											<div class="row">
+												<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th width="5%">ลำดับ</th>
+																	<th>ชื่อโครงการ/ผลงาน</th>
+																	<th>ตำแหน่ง</th>
+																	<th>วันที่เริ่มโครงการ-วันที่สิ้นสุดโครงการ</th>
+																	<th width="17%">เครื่องมือ</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td style="text-align: left">โครงการออกแบบเว็บไซต์และระบบลงทะเบียน</td>
+																	<td style="text-align: left">ผู้จัดการโครงการ</td>
+																	<td>01/01/2559-01/01/2560</td>
+																	<td>
+																		<a class="btn btn-warning btn-xs" id="btn-Expeconsultant-edit"><i class="fa fa-pencil"></i> แก้ไข</a>
+																		<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																	</td>
+
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div class="buttom-line"></div>
+											<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10  padding-0"><label class="control-label"> ข้อมูลใบประกอบวิชาชีพ   </label></div>
+											<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 padding-0"><a class="btn-u teb-right" id="btn-Procertificate-add">เพิ่ม</a></div>
+											<div class="row">
+												<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th width="5%">ลำดับ</th>
+																	<th width="17%">เลขที่</th>
+																	<th align="center">ชื่อวิชาชีพ</th>
+																	<th width="17%" align="center">วันหมดอายุ</th>
+																	<th width="17%">เครื่องมือ</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td style="text-align:left">123456789012</td>
+																	<td style="text-align: left">test</td>
+																	<td> 01/01/2560</td>
+																	<td>
+																		<a class="btn btn-warning btn-xs" id="btn-Procertificate-edit"><i class="fa fa-pencil"></i> แก้ไข</a>
+																		<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																	</td>
+																</tr>
+
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a class="accordion-toggle-modal collapsed" data-toggle="collapse" data-parent="#accordionprofile-1" href="#collapseprofile-Seven"><span >3. </span>สาขาความเชี่ยวชาญ | สาขาหลักของบุคลากรที่ปรึกษา </a> </h4>
+									</div>
+									<div id="collapseprofile-Seven" class="panel-collapse collapse ">
+										<div class="panel-body" style="padding: 15px 0px;">
+											<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10  padding-0"><label class="control-label"> สาขาความเชี่ยวชาญ   </label></div>
+											<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 padding-0"><a class="btn-u teb-right" id="btn-Specialization-add">เพิ่ม</a></div>
+											<div class="row">
+												<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th width="5%">ลำดับ</th>
+																	<th>สาขา</th>
+																	<th>ความเชี่ยวชาญ</th>
+																	<th>ตำแหน่งงาน</th>
+																	<th>หน้าที่ความรับผิดชอบ</th>
+																	<th>ประสบการณ์การทำงานในสาขา (ปี)</th>
+																	<th width="17%">เครื่องมือ</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td> 1 </td>
+																	<td style="text-align: left"> Education Sector </td>
+																	<td style="text-align: left"> Distance Learning </td>
+																	<td> ที่ปรึกษา </td>
+																	<td style="text-align: left"> บริหารโครงการและให้คำปรึกษาในการออกแบบการเรียนรู้บทเรียนออนไลน์ </td>
+																	<td> 9 </td>
+																	<td>
+																		<a class="btn btn-warning btn-xs" id="btn-Specialization-edit"><i class="fa fa-pencil"></i> แก้ไข</a>
+																		<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div class="buttom-line"></div>
+											<label class="  col-md-4 control-label padding-0"> สาขาหลักของบุคลากรที่ปรึกษา  </label>
+											<div class="row">
+												<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 margin-bottom-20">
+													<select class="form-control">
+																		<option>กรุณาเลือกสาขา</option>
+																		</select>
+												</div>
+											</div>
+
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a class="accordion-toggle-modal collapsed" data-toggle="collapse" data-parent="#accordionprofile-1" href="#collapseprofile-Five"><span >4. </span>หลักสูตรการอบรม</a> </h4>
+									</div>
+									<div id="collapseprofile-Five" class="panel-collapse collapse ">
+										<div class="panel-body" style="padding: 15px 0px;">
+											<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10  padding-0"><label class="control-label"> หลักสูตรการอบรม   </label></div>
+											<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 padding-0"><a class="btn-u teb-right" id="btn-Training-add">เพิ่ม</a></div>
+											<div class="row">
+												<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th width="5%">ลำดับ</th>
+																	<th>หลักสูตรการอบรม/ประกาศนียบัตร</th>
+																	<th>ปี</th>
+																	<th width="17%">เครื่องมือ</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td style="text-align: left">อบรม "การใช้google"</td>
+																	<td>2558</td>
+																	<td>
+																		<a class="btn btn-warning btn-xs" id="btn-Training-edit"><i class="fa fa-pencil"></i> แก้ไข</a>
+																		<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																	</td>
+
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Education-edit" style="display: none;">
+							<div class="row margin-bottom-10">
+								<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 margin-bottom-10-xs">
+									<label>ระดับการศึกษา <span style="color: red;"> *</span></label>
+									<select class="form-control" required>
+																<option>เลือกระดับ</option>
+																<option>ปริญญาตรี</option>
+																<option>ปริญญาโท</option>
+																<option>ปริญญาเอก</option>
+																</select>
+								</div>
+								<div class="col-md-4 col-sm-4 col-lg-4 col-xs-12 margin-bottom-10-xs">
+									<label>วุฒิการศึกษา <span style="color: red;">*</span></label>
+									<select class="form-control" required>
+																<option>เลือกวุฒิการศึกษา</option>
+																</select>
+
+								</div>
+								<div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
+									<label>วุฒิการศึกษาอื่นๆ  <input type="checkbox" id="otherCerEDchk" name="otherCerEDchk"/></label>
+									<input type="text" name="otherCerED" id="otherCerED" class="form-control" disabled>
+								</div>
+							</div>
+							<div class="row margin-bottom-10">
+								<div class="col-md-12 col-lg-12 col-xs-12">
+									<label>สาขา <span style="color: red;">*</span></label>
+									<input type="text" class="form-control" required>
+								</div>
+							</div>
+							<div class="row margin-bottom-10">
+								<div class="col-md-4 col-lg-4 col-xs-12 margin-bottom-10-xs">
+									<label>ประเภทสถาบันการศึกษา <span style="color: red;">*</span> </label>
+									<select class="form-control" required>
+																<option>สถาบันในประเทศ</option>
+																<option>สถาบันต่างประเทศ</option>
+																</select>
+
+								</div>
+								<div class="col-md-4 col-lg-4 col-xs-12 margin-bottom-10-xs">
+									<label>สถาบันการศึกษา <span style="color: red;">*</span> </label>
+									<select class="form-control" required>
+																<option>เลือกสถาบันการศึกษา</option>
+															</select>
+								</div>
+								<div class="col-md-4 col-lg-4 col-xs-12 ">
+									<label>สถาบันอื่นๆ <input type="checkbox" id="otherEDchk" name="otherEDchk"/></label>
+									<input type="text" name="otherED" id="otherED" class="form-control" disabled>
+								</div>
+							</div>
+							<div class="row margin-bottom-15">
+								<div class="col-md-4">
+									<label>วันที่จบการศึกษา</label>
+									<input type="text" id="graduation_date" class="form-control" readonly style="background-color: #FFF">
+								</div>
+							</div>
+							<div class="row">
+								<div class="buttom-line2"></div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: right">
+									<button type="button" class="btn-g submitbutton" id="btn-profile-save1">บันทึก</button>
+									<button type="button" class="btn-cancel btn-u-default" id="btn-profile-cancle1">ยกเลิก</button>
+								</div>
+							</div>
+						</div>
+						<div id="Experience-edit" style="display: none;">
+							<div class="row ">
+								<div class="col-md-12 col-lg-12 col-xs-12 ">
+									<div class="form-group">
+										<label>ชื่อบริษัท <span style="color: red;">*</span> </label>
+										<input type="text" class="form-control" required>
+									</div>
+								</div>
+							</div>
+							<div class="row ">
+								<div class="col-md-6 col-lg-6 col-xs-12">
+									<div class="form-group">
+										<label>ตำแหน่ง <span style="color: red;">*</span></label>
+										<select class="form-control" required>
+																	<option>เลือกตำแหน่ง</option>
+																</select>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-6 col-xs-12">
+									<div class="form-group">
+										<label>ประเภทธุรกิจ <span style="color: red;">*</span></label>
+										<select class="form-control" required>
+																	<option>เลือกประเภทธุรกิจ</option>
+																</select>
+									</div>
+								</div>
+							</div>
+							<div class="row margin-bottom-15">
+								<div class="col-md-6 col-lg-6 col-xs-12 ">
+									<div class="form-group">
+										<label>วันที่เริ่มการทำงาน <span style="color: red;">*</span></label>
+										<input class="form-control" type="text" name="date" id="working_start" required readonly style="background: #FFF;">
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-6 col-xs-12 ">
+									<div class="form-group">
+										<label>วันที่สิ้นสุดการทำงาน <span style="color: red;">* </span> </label> <input id="Endofwork_nowChk" type="checkbox"> ปัจจุบัน
+										<input class="form-control" type="text" name="date" id="working_end" readonly style="background: #FFF;">
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="buttom-line2"></div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: right">
+									<button type="button" class="btn-g submitbutton" id="btn-profile-save2">บันทึก</button>
+									<button type="button" class="btn-cancel btn-u-default" id="btn-profile-cancle2">ยกเลิก</button>
+								</div>
+							</div>
+						</div>
+						<div id="Procertificate-edit" style="display: none;">
+							<div class="row">
+								<div class="col-md-12 margin-bottom-10">
+									<label>ชื่อใบประกอบวิชาชีพ <span style="color: red;">*</span></label>
+									<input type="text" class="form-control" required>
+								</div>
+							</div>
+							<div class="row margin-bottom-15">
+								<div class="col-md-6 col-lg-6  col-xs-12 margin-bottom-10-xs">
+									<label>เลขใบประกอบวิชาชีพ <span style="color: red;">*</span></label>
+									<input type="number" class="form-control" required>
+								</div>
+								<div class="col-md-6 col-lg-6 col-xs-12">
+									<label>วันหมดอายุ <span style="color: red;">*</span></label>
+									<input class="form-control" type="text" id="personnel_certificate_expireddate" required readonly style="background: #FFF;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="buttom-line2"></div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: right">
+									<button type="button" class="btn-g submitbutton" id="btn-profile-save3">บันทึก</button>
+									<button type="button" class="btn-cancel btn-u-default" id="btn-profile-cancle3">ยกเลิก</button>
+								</div>
+							</div>
+						</div>
+						<div id="Training-edit" style="display: none;">
+							<div class="row margin-bottom-15">
+								<div class="col-md-12 col-lg-12 col-xs-12 margin-bottom-10">
+									<label>หลักสูตรการอบรม/ประกาศนียบัตร <span style="color: red;">*</span></label>
+									<input type="text" class="form-control" required>
+								</div>
+								<div class="col-md-6 col-lg-6 col-xs-12">
+									<label>ปี <span style="color: red;">*</span> </label>
+									<input type="text" class="form-control" id="Training_year" required>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="buttom-line2"></div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: right">
+									<button type="button" class="btn-g submitbutton" id="btn-profile-save4">บันทึก</button>
+									<button type="button" class="btn-cancel btn-u-default" id="btn-profile-cancle4">ยกเลิก</button>
+								</div>
+							</div>
+						</div>
+						<div id="Expeconsultant-edit" style="display: none;">
+							<div class="row margin-bottom-10">
+								<div class="col-md-6 col-lg-6 col-xs-12 margin-bottom-10-xs">
+									<label>ชื่อโครงการ/ผลงาน <span style="color: red;">*</span></label>
+									<input type="text" class="form-control" required>
+								</div>
+								<div class="col-md-6 col-lg-6 col-xs-12">
+									<label>ตำแหน่ง <span style="color: red;">*</span> </label>
+									<select class="form-control" required>
+																	<option>เลือกตำแหน่ง</option>
+																</select>
+								</div>
+							</div>
+							<div class="row margin-bottom-15">
+								<div class="col-md-6 col-lg-6 col-xs-12 margin-bottom-10-xs">
+									<label>วันที่เริ่มโครงการ</label>
+									<input type="text" id="personnel_working_start" class="form-control">
+								</div>
+								<div class="col-md-6 col-lg-6 col-xs-12">
+									<label>วันที่สิ้นสุดโครงการ</label>
+									<input type="text" id="personnel_working_end" class="form-control">
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="buttom-line2"></div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: right">
+									<button type="button" class="btn-g submitbutton" id="btn-profile-save5">บันทึก</button>
+									<button type="button" class="btn-cancel btn-u-default" id="btn-profile-cancle5">ยกเลิก</button>
+								</div>
+							</div>
+						</div>
+						<div id="Specialization-edit" style="display: none;">
+							<div class="row margin-bottom-15">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding margin-bottom-10">
+										<label>สาขา <span style="color: red;">*</span></label>
+										<select class="form-control" required>
+																		<option>กรุณาเลือกสาขา</option>
+																	</select>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding margin-bottom-10">
+										<label>ความเชี่ยวชาญ <span style="color: red;">*</span></label>
+										<select class="form-control" required>
+																		<option>กรุณาเลือกความเชี่ยวชาญ</option>
+																	</select>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding margin-bottom-10-xs">
+										<label>ตำแหน่งงาน</label>
+										<select class="form-control">
+																	<option>กรุณาเลือกตำแหน่งงาน</option>
+																</select>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+									<label>หน้าที่ความรับผิดชอบ</label>
+									<textarea class="form-control  margin-bottom-10" rows="4"></textarea>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-top-10-smmdlg ">
+									<label>ประสบการณ์การทำงานในสาขา (ปี)</label>
+									<input type="number" class="form-control" min="0" max="99" maxlength="2" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)">
+								</div>
+							</div>
+
+
+							<div class="row">
+								<div class="buttom-line2"></div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: right">
+									<button type="button" class="btn-g submitbutton" id="btn-profile-save6">บันทึก</button>
+									<button type="button" class="btn-cancel btn-u-default" id="btn-profile-cancle6">ยกเลิก</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer" id="modalfooter">
+						<button type="button" class="btn-cancel btn-u-default" id="btn-profile-cancle">ปิด</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal personnelprofile_add Edit End-->
+	<!------------ All Modal Form In collapse-Two end ---------------->
+
+	<!------------ All Modal Form In collapse-Three Start ---------------->
+		<!-- Modal project_add Edit Start-->
+		<input type="hidden" id="hf-project">
+		<div class="modal  fade bs-example-modal-lg" id="project_edit" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" id="btn-project-close">&times;</button>
+						<h5 class="modal-title" id="project-head-title">เพิ่มข้อมูลโครงการ</h5>
+					</div>
+					<div class="modal-body">
+						<div id="project">
+							<div class="panel-group acc-v2" id="accordionproject-1" style="margin: 0px;">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a class="accordion-toggle-modal collapsed" data-toggle="collapse" data-parent="#accordionproject-1" href="#collapseproject-One"><span >1. </span>ข้อมูลโครงการ </a> </h4>
+									</div>
+									<div id="collapseproject-One" class="panel-collapse collapse">
+										<div class="panel-body" style="padding: 15px 0px">
+											<div class="row">
+												<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> ประเภทโครงการ <span style="color: red">*</span> </label>
+														<select class="form-control" required>
+															<option>เลือกประเภท</option>
+															<option>ในประเทศ</option>
+															<option>ต่างประเทศ</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> ชื่อโครงการ <span style="color: red">*</span> </label>
+														<input class="form-control" type="text" required />
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> เลขที่สัญญาจ้าง <span style="color: red">*</span> </label>
+														<input class="form-control" type="text" required />
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> วันที่เริ่มโครงการ <span style="color: red">*</span>  </label>
+														<input class="form-control" type="text" id="project_start" readonly required style="background: #FFF" />
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> วันที่สิ้นสุดโครงการ <span style="color: red">*</span> </label>
+														<input class="form-control" type="text" id="project_end" readonly required style="background: #FFF" />
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> ระยะเวลาดำเนินโครงการ <span style="color: red">*</span> </label>
+														<input class="form-control" type="text" required />
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> สถานที่ <span style="color: red">*</span> </label>
+														<input class="form-control" type="text" required />
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label">  มูลค่าโครงการทั้งหมด (บาท) <span style="color: red">*</span> </label>
+														<input class="form-control" type="number" required />
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> มูลค่าค่าจ้างที่ปรึกษา (บาท) <span style="color: red">*</span> </label>
+														<input class="form-control" type="number" required />
+													</div>
+												</div>
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label"> วัตถุประสงค์, เป้าหมายของโครงการ <span style="color: red">*</span> </label>
+														<textarea class="form-control" rows="8" required></textarea>ไม่เกิน 8,000 ตัวอักษร
+													</div>
+												</div>
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<div class="form-group ">
+														<label class="control-label">ขอบเขตการดำเนินงาน (TOR) <span style="color: red">*</span> </label>
+														<textarea class="form-control" rows="8" required></textarea>ไม่เกิน 8,000 ตัวอักษร
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a class="accordion-toggle-modal collapsed" data-toggle="collapse" data-parent="#accordionproject-1" href="#collapseproject-two"><span >2. </span>ข้อมูลสาขาที่ทำงานในโครงการ</a> </h4>
+									</div>
+									<div id="collapseproject-two" class="panel-collapse collapse">
+										<div class="panel-body" style="padding: 15px 0px;">
+
+											<div class="row" style="margin:0px 0px ">
+												<div class="col-lg-12 col-lg-12 col-sm-12 col-xs-12 margin-bottom-10 no-padding">
+													<label>เลือกข้อมูลสาขา</label> <span class="field-tip"><i class="fa fa-question-circle-o" style="font-size: 18px;"  aria-hidden="true"></i><span class="tip-content">เลือกได้ 1 สาขา</span></span>
+
+													<select class="form-control" id="pre-selected-options3" multiple>
+																					<option value="AG" >AG:Agriculture And Rural Development Sector</option>
+																					<option value="TE" selected>TE: Telecommunication Sector</option>
+																					<option value="CO">CO:Construction Industry Development Sector</option>
+																					<option value="ED">ED:Education Sector</option>
+																					<option value="EG">EG:Energy Sector</option>
+																					<option value="EV">EV:Environment Sector</option>
+																					<option value="FI">FI:Financial Sector</option>
+																				</select>
+												</div>
+												<div class="col-lg-12 col-lg-12 col-sm-12 col-xs-12 buttom-line padding-top-5"></div>
+											</div>
+											<div class="row " style="margin:0px 0px ">
+												<div class="col-lg-12 col-lg-12 col-sm-12 col-xs-12 margin-bottom-10 no-padding"> <label>เลือกข้อมูลความเชี่ยวชาญ</label> <span class="field-tip"><i class="fa fa-question-circle-o" style="font-size: 18px;"  aria-hidden="true"></i>
+																				<span class="tip-content">เลือกได้ไม่เกิน 4 ความเชี่ยวชาญ</span>
+													</span>
+													<select class="form-control" id="pre-selected-options4" multiple>
+																				<option value="I100">I100:General</option>
+																				<option value="I101">I101:Demon Requirements</option>
+																				<option value="I102">I102:Forecasting</option>
+																				<option value="I103">I103:Overrall Network Desing</option>
+																				<option value="I104">I104:Telecommunications Related Training</option>
+																				<option value="I105">I105:Requlatory Framework</option>
+																				<option value="I500" selected>I500:Computer Applications</option>
+																				<option value="Q102" selected>Q102:Computer Systems Development</option>
+																			</select>
+												</div>
+												<div class="col-lg-12 col-lg-12 col-sm-12 col-xs-12 buttom-line padding-top-5"></div>
+											</div>
+											<div class="row " style="margin:0px 0px ">
+												<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 margin-bottom-20 no-padding">
+													<label>เลือกข้อมูลบริการ</label> <span class="field-tip"><i class="fa fa-question-circle-o" style="font-size: 18px;"  aria-hidden="true"></i>
+																				<span class="tip-content">เลือกได้ไม่เกิน 4 บริการ</span>
+													</span>
+													<select class="form-control" id="pre-selected-options5" multiple>
+																				<option value="1A" >1A:Aerial Surveys, Satellite Imagery</option>
+																				<option value="1B">1B:Geological</option>
+																				<option value="1C">1C:Geophysical Surveys</option>
+																				<option value="1D">1D:Hydrological Survey</option>
+																				<option value="1E">1E:Hydrographic Surveys</option>
+																				<option value="1F">1F:Soil Surveys</option>
+																				<option value="8C" selected>8C:Computor Technology</option>
+																				<option value="8D" selected>8D:Information Technology Consultancy</option>
+																				<option value="8H" selected>8H:Computer Systems Desing & implememtation</option>
+																				<option value="8E" selected>8E:Management Information System</option>
+																			</select>
+												</div>
+											</div>
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a class="accordion-toggle-modal collapsed" data-toggle="collapse" data-parent="#accordionproject-1" href="#collapseproject-three"><span >3. </span>เจ้าหน้าที่ที่ทำงานในโครงการ</a> </h4>
+									</div>
+									<div id="collapseproject-three" class="panel-collapse collapse ">
+										<div class="panel-body" style="padding: 15px 0px">
+											<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10 no-padding"><label class="control-label">  เจ้าหน้าที่ที่ทำงานในโครงการ (อย่างน้อย 1 คน)   </label></div>
+											<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2  no-padding"><a class="btn-u teb-right" id="btn-board-add">เพิ่ม</a></div>
+											<div class="row">
+												<div class="col-md-12  col-lg-12 col-sm-12 col-xs-12">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th>ลำดับ</th>
+																	<th>รายชื่อ</th>
+																	<th>ตำแหน่ง</th>
+																	<th>อัตราการจ้าง (บาท)</th>
+																	<th>Man Mounth</th>
+																	<th width="17%">เครื่องมือ</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>นายเมธัส บุญก่อเกื้อ</td>
+																	<td>นักเขียนโปรแกรม</td>
+																	<td> 40,000.00</td>
+																	<td> 1</td>
+																	<td>
+																		<a class="btn btn-warning btn-xs" id="btn-board-edit"><i class="fa fa-pencil"></i> แก้ไข</a>
+																		<a class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> ลบ</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="row teb-submit">
+											<button type="submit" class="form-control">ดำเนินการต่อ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="board-edit" style="display: none;">
+							<div class="row margin-bottom-10">
+								<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" style="margin-bottom: 10px;">
+									<label>ชื่อ-นามสกุล <span style="color: red">*</span></label>
+									<input type="text" class="form-control" required>
+
+								</div>
+								<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" style="margin-bottom: 10px;">
+									<label>ตำแหน่ง <span style="color: red">*</span></label>
+									<select class="form-control" required>
+																		<option>กรุณาเลือกตำแหน่ง</option>
+																	</select>
+								</div>
+								<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+									<label>อัตราการจ้าง (บาท) <span style="color: red">*</span></label>
+									<input type="number" class="form-control" required>
+								</div>
+								<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 padding-top-10-xs">
+									<label>Man Mounth <span style="color: red">*</span></label>
+									<input type="number" class="form-control" required>
+								</div>
+							</div>
+							<div class="row ">
+								<div class="buttom-line2"></div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: right">
+									<button type="button" class="btn-g submitbutton" id="btn-project-save1">บันทึก</button>
+									<button type="button" class="btn-cancel btn-u-default" id="btn-project-cancle1">ยกเลิก</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="modal-footer" id="modalfooterproject">
+						<button type="button" class="btn-cancel btn-u-default" id="btn-project-cancle">ปิด</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Modal project_add Edit End-->
+	<!------------ All Modal Form In collapse-Three end ---------------->
+
+	<!------------ All Modal Form account-setting Start ---------------->
+		<div class="modal fade bs-example-modal" id="manage_account" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h5 class="modal-title">จัดการบัญชีของฉัน</h5>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<form class="sky-form">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10">
+									<label>Username <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10">
+									<label>อีเมล์ <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10">
+									<label>อีเมล์ (สำรอง) <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10">
+									<label>เบอร์โทรศัพท์มือถือ <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10">
+									<label>เบอร์โทรศัพท์มือถือ (สำรอง) <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10">
+									<label>รูปประจำตัว</label><br>
+									<img class="profile-pic img-preview img-preview-sm user_pic1 margin-bottom-10" src="assets/img/demo.jpg">
+									<div class="add-upload-button1 btn btn-primary">เลือกไฟล์</div>
+									<input class="add-file-upload1" type="file" accept="image/*" style="display:none">
+									<input type="hidden" id="hf_add_img_src1" value="">
+
+								</div>
+
+
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<label>โปรดกรอกรหัสผ่านของท่าน เพื่อยืนยันการแก้ไข <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+							</form>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn-g btnsubmitbutton">บันทึก</button>
+						<!--<button type="button" class="btnsubmitbutton">บันทึก</button>-->
+						<button type="button" class="btn-cancel btn-u-default" data-dismiss="modal">ยกเลิก</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade bs-example-modal" id="manage_password" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h5 class="modal-title">แก้ไขรหัสผ่าน</h5>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<form class="sky-form">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10">
+									<label>รหัสผ่านเดิม <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10">
+									<label>รหัสผ่านใหม่ <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+									<label>ยืนยันรหัสผ่านใหม่ <span style="color: red">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+							</form>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn-g btnsubmitbutton">บันทึก</button>
+						<!--<button type="button" class="btnsubmitbutton">บันทึก</button>-->
+						<button type="button" class="btn-cancel btn-u-default" data-dismiss="modal">ยกเลิก</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade bs-example-modal" id="payment" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h5 class="modal-title">แนบหลักฐานการโอนเงิน</h5>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<form class="sky-form">
+								<div class="row" style="padding:0px 15px;">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+										<label>วันและเวลาที่ทำรายการชำระค่าธรรมเนียม</label>
+										<input type="text" id="datetimepicpayment" name="daterange" readonly style="background: #FFF;" class="form-control">
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-top-10-xs  ">
+										<label>จำนวนเงิน (บาท) <span style="color: red">*</span></label>
+										<input type="number" class="form-control">
+
+									</div>
+								</div>
+								<div class="row" style="padding:0px 15px;">
+
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin-bottom-30" style="padding-top: 10px;">
+										<label>อัพโหลดหลักฐานการชำระค่าธรรมเนียม <span style="color: red">*</span></label>
+										<label for="file" class="input input-file">
+																		<div class="button"><input type="file" id="payinfile" >Browse</div>
+																	</label>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn-g btnsubmitbutton">บันทึก</button>
+						<!--<button type="button" class="btnsubmitbutton">บันทึก</button>-->
+						<button type="button" class="btn-cancel btn-u-default" data-dismiss="modal">ยกเลิก</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!------------ All Modal Form In collapse-Two end ---------------->
+
+    <!-- JS Global Compulsory -->
+    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+    <script type="text/javascript" src="assets/plugins/modernizr.js"></script>
+    <script type="text/javascript" src="assets/plugins/login-signup-modal-window/js/main.js"></script>
+    <!-- Gem jQuery -->
+    <script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
+    <script type="text/javascript" src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/greensock.js"></script>
+    <script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/layerslider.transitions.js"></script>
+    <script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/masking.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/datepicker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/validation.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+
+
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
+    <script src="assets/plugins/master-slider/masterslider/masterslider.min.js"></script>
+    <script src="assets/plugins/master-slider/masterslider/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/counter/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/counter/jquery.counterup.min.js"></script>
+
+
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="assets/js/plugins/master-slider-fw.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+
+
+
+    <!-- Morris -->
+    <!--    <script src="assets/js/graph/plugins/morris/raphael-2.1.0.min.js"></script>-->
+    <!--    <script src="assets/js/graph/plugins/morris/morris.js"></script>
+-->
+    <!-- Custom and plugin javascript -->
+    <script src="assets/js/graph/plugins/pace/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/datepicker.js"></script>
+
+
+    <!-- Morris demo data-->
+    <!--    <script src="assets/js/demo/morris-demo.js"></script>
+-->
+    <!--[if lt IE 9]>
+	<script src="assets/plugins/respond.js"></script>
+	<script src="assets/plugins/html5shiv.js"></script>
+	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<![endif]-->
+
+    <!----------- New javescript Function Start------------->
+    <script type="text/javascript" src="assets/js/jquery.multi-select.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.ui.datepicker.js"></script>
+    <script src="assets/js/plugins/datetimepicker/moment-with-locales.js"></script>
+    <script src="assets/js/plugins/datetimepicker/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="assets/js/datapicker/bootstrap-datepicker.js"></script>
+    <link href="assets/css/plugins/datepicker/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="assets/css/datapicker/datepicker3.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        $(function() {
+            $('#inceptionDate').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L'
+            });
+            $('#Certificate_expireddate').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L'
+            });
+            $('#profile_birthday').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L'
+            });
+            $('#graduation_date').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L'
+            });
+            $('#working_start').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L'
+            });
+            $('#working_end').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L',
+                useCurrent: false //Important! See issue #1075
+            });
+            $("#working_start").on("dp.change", function(e) {
+                $('#working_end').data("DateTimePicker").minDate(e.date);
+            });
+            $("#working_end").on("dp.change", function(e) {
+                $('#working_start').data("DateTimePicker").maxDate(e.date);
+            });
+            $('#personnel_certificate_expireddate').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L'
+            });
+            $('#personnel_working_start').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L'
+            });
+            $('#personnel_working_end').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L',
+                useCurrent: false //Important! See issue #1075
+            });
+            $("#personnel_working_start").on("dp.change", function(e) {
+                $('#personnel_working_end').data("DateTimePicker").minDate(e.date);
+            });
+            $("#personnel_working_end").on("dp.change", function(e) {
+                $('#personnel_working_start').data("DateTimePicker").maxDate(e.date);
+            });
+            $('#Training_year').datetimepicker({
+                viewMode: 'years',
+                format: 'YYYY'
+            });
+            $('#project_start').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L'
+            });
+            $('#project_end').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true,
+                format: 'L',
+                useCurrent: false //Important! See issue #1075
+            });
+            $("#project_start").on("dp.change", function(e) {
+                $('#project_end').data("DateTimePicker").minDate(e.date);
+            });
+            $("#project_end").on("dp.change", function(e) {
+                $('#project_start').data("DateTimePicker").maxDate(e.date);
+            });
+            $('#Training_year').datetimepicker({
+                viewMode: 'years',
+                format: 'YYYY'
+            });
+
+            $('#datetimepicpayment').datetimepicker({
+                locale: 'th',
+                ignoreReadonly: true
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            App.init();
+            Masking.initMasking();
+            //Datepicker.initDatepicker();
+            Validation.initValidation();
+            StyleSwitcher.initStyleSwitcher();
+            $.fn.modal.prototype.constructor.Constructor.DEFAULTS.backdrop = 'static';
+            $.fn.modal.prototype.constructor.Constructor.DEFAULTS.keyboard = false;
+            $('#otherlangskill').change(function() {
+                if (this.checked) {
+                    $("#OtherLanguageText").show();
+                    $("#OtherLanguageInput").show();
+                } else {
+                    $("#OtherLanguageText").hide();
+                    $("#OtherLanguageInput").hide();
+                }
+            });
+            $('#Endofwork_nowChk').change(function() {
+                if ($(this).is(':checked')) {
+                    $("#working_end").attr("disabled", $(this).is(':checked'));
+                    $("#working_end").css({
+                        'background': 'rgb(235, 235, 228)'
+                    });
+                } else {
+                    $("#working_end").attr("disabled", $(this).is(':checked'));
+                    $("#working_end").css({
+                        'background': '#FFF'
+                    });
+                }
+
+            });
+            var readURL1 = function(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('.user_pic1').attr('src', e.target.result);
+                        $('#hf_add_img_src1').val(e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            var readURL2 = function(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('.user_pic2').attr('src', e.target.result);
+                        $('#hf_add_img_src2').val(e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $(".add-file-upload1").on('change', function() {
+                readURL1(this);
+            });
+
+            $(".add-upload-button1").on('click', function() {
+                $(".add-file-upload1").click();
+            });
+            $(".add-file-upload2").on('change', function() {
+                readURL2(this);
+            });
+
+            $(".add-upload-button2").on('click', function() {
+                $(".add-file-upload2").click();
+            });
+        });
+
+
+
+
+        function maxLengthCheck(object) {
+            if (object.value.length > object.maxLength)
+                object.value = object.value.slice(0, object.maxLength)
+        }
+
+        function isNumeric(evt) {
+            var theEvent = evt || window.event;
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode(key);
+            var regex = /[0-9]|\./;
+            if (!regex.test(key)) {
+                theEvent.returnValue = false;
+                if (theEvent.preventDefault) theEvent.preventDefault();
+            }
+        }
+
+        function BoardOtherNationOff() {
+            $('#BoardOtherNationText').hide();
+            $('#BoardOtherNationInput').hide();
+        }
+
+        function BoardOtherNationOn() {
+            $('#BoardOtherNationText').show();
+            $('#BoardOtherNationInput').show();
+        }
+
+        function OtherNationOff() {
+            $("#otherNationText").hide();
+            $("#otherNationInput").hide();
+        }
+
+        function OtherNationOn() {
+            $("#otherNationText").show();
+            $("#otherNationInput").show();
+        }
+
+        function OtherLanguageOff() {
+            $("#OtherLanguageText").hide();
+            $("#OtherLanguageInput").hide();
+        }
+
+        function OtherLanguageOn() {
+            $("#OtherLanguageText").show();
+            $("#OtherLanguageInput").show();
+        }
+        $('#otherCerEDchk').change(function() {
+            $("#otherCerED").prop("disabled", !$(this).is(':checked'));
+        });
+        $('#otherEDchk').change(function() {
+            $("#otherED").prop("disabled", !$(this).is(':checked'));
+        });
+
+        // run pre selected options
+        $('#pre-selected-options').multiSelect();
+        // run pre selected options
+        $('#pre-selected-options2').multiSelect();
+        // run pre selected options
+        $('#pre-selected-options3').multiSelect();
+        // run pre selected options
+        $('#pre-selected-options4').multiSelect();
+        // run pre selected options
+        $('#pre-selected-options5').multiSelect();
+
+        $("#btn-profile-add").click(function() {
+            $('#personnelprofile_add').modal('show');
+            $("#Procertificate-edit").hide();
+            $("#profile").show();
+            $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+            $("#hf-profile").val("hf-profile-main");
+        });
+
+        $("#btn-project-add").click(function() {
+            $('#project_edit').modal('show');
+            $("#project").show();
+            $("#project-head-title").html("เพิ่มข้อมูลโครงการ");
+            $("#hf-project").val("hf-project-main");
+        });
+
+        $("#btn-Procertificate-edit").click(function() {
+            $("#profile").hide();
+            $("#Procertificate-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("แก้ไขข้อมูลใบประกอบวิชาชีพ");
+            $("#hf-profile").val("hf-Procertificate-edit");
+        });
+        $("#btn-Procertificate-add").click(function() {
+            $("#profile").hide();
+            $("#Procertificate-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("เพิ่มข้อมูลใบประกอบวิชาชีพ");
+            $("#hf-profile").val("hf-Procertificate-add");
+        });
+
+        $("#btn-Education-edit").click(function() {
+            $("#profile").hide();
+            $("#Education-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("แก้ไขข้อมูลประวัติการศึกษา");
+            $("#hf-profile").val("hf-Education-edit");
+        });
+        $("#btn-Education-add").click(function() {
+            $("#profile").hide();
+            $("#Education-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("เพิ่มข้อมูลประวัติการศึกษา");
+            $("#hf-profile").val("hf-Education-add");
+        });
+
+        $("#btn-Experience-edit").click(function() {
+            $("#profile").hide();
+            $("#Experience-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("แก้ไขข้อมูลประวัติการทำงาน");
+            $("#hf-profile").val("hf-Experience-edit");
+        });
+        $("#btn-Experience-add").click(function() {
+            $("#profile").hide();
+            $("#Experience-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("เพิ่มข้อมูลประวัติการทำงาน");
+            $("#hf-profile").val("hf-Experience-add");
+        });
+
+        $("#btn-Training-edit").click(function() {
+            $("#profile").hide();
+            $("#Training-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("แก้ไขข้อมูลการอบรม");
+            $("#hf-profile").val("hf-Training-edit");
+        });
+        $("#btn-Training-add").click(function() {
+            $("#profile").hide();
+            $("#Training-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("เพิ่มข้อมูลการอบรม");
+            $("#hf-profile").val("hf-Training-add");
+        });
+
+        $("#btn-Expeconsultant-edit").click(function() {
+            $("#profile").hide();
+            $("#Expeconsultant-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("แก้ไขข้อมูลประสบการณ์การเป็นที่ปรึกษา");
+            $("#hf-profile").val("hf-Expeconsultant-edit");
+        });
+        $("#btn-Expeconsultant-add").click(function() {
+            $("#profile").hide();
+            $("#Expeconsultant-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("เพิ่มข้อมูลประสบการณ์การเป็นที่ปรึกษา");
+            $("#hf-profile").val("hf-Expeconsultant-add");
+        });
+
+        $("#btn-Specialization-edit").click(function() {
+            $("#profile").hide();
+            $("#Specialization-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("แก้ไขข้อมูลสาขาความเชี่ยวชาญ");
+            $("#hf-profile").val("hf-Specialization-edit");
+        });
+        $("#btn-Specialization-add").click(function() {
+            $("#profile").hide();
+            $("#Specialization-edit").show();
+            $("#modalfooter").hide();
+            $("#profile-head-title").html("เพิ่มข้อมูลสาขาความเชี่ยวชาญ");
+            $("#hf-profile").val("hf-Specialization-add");
+        });
+
+        $("#btn-board-edit").click(function() {
+            $("#project").hide();
+            $("#board-edit").show();
+            $("#modalfooterproject").hide();
+            $("#project-head-title").html("แก้ไขข้อมูลเจ้าหน้าที่ที่ทำงานในโครงการ");
+            $("#hf-project").val("hf-board-edit");
+        });
+
+        $("#btn-board-add").click(function() {
+            $("#project").hide();
+            $("#board-edit").show();
+            $("#modalfooterproject").hide();
+            $("#project-head-title").html("เพิ่มข้อมูลเจ้าหน้าที่ที่ทำงานในโครงการ");
+            $("#hf-project").val("hf-board-add");
+        });
+
+        $("#btn-profile-close").click(function() {
+            chkStateSaveProfile();
+        });
+
+        $("#btn-profile-save").click(function() {
+            chkStateSaveProfile();
+
+        });
+
+        $("#btn-profile-cancle").click(function() {
+            chkStateSaveProfile();
+        });
+        $("#btn-profile-save1").click(function() {
+            chkStateSaveProfile();
+
+        });
+
+        $("#btn-profile-cancle1").click(function() {
+            chkStateSaveProfile();
+        });
+        $("#btn-profile-save2").click(function() {
+            chkStateSaveProfile();
+
+        });
+
+        $("#btn-profile-cancle2").click(function() {
+            chkStateSaveProfile();
+        });
+        $("#btn-profile-save3").click(function() {
+            chkStateSaveProfile();
+
+        });
+
+        $("#btn-profile-cancle3").click(function() {
+            chkStateSaveProfile();
+        });
+        $("#btn-profile-save4").click(function() {
+            chkStateSaveProfile();
+
+        });
+
+        $("#btn-profile-cancle4").click(function() {
+            chkStateSaveProfile();
+        });
+        $("#btn-profile-save5").click(function() {
+            chkStateSaveProfile();
+
+        });
+
+        $("#btn-profile-cancle5").click(function() {
+            chkStateSaveProfile();
+        });
+        $("#btn-profile-save6").click(function() {
+            chkStateSaveProfile();
+
+        });
+
+        $("#btn-profile-cancle6").click(function() {
+            chkStateSaveProfile();
+        });
+        $("#btn-project-save").click(function() {
+            chkStateSaveProject();
+
+        });
+
+        $("#btn-project-cancle").click(function() {
+            chkStateSaveProject();
+        });
+        $("#btn-project-save1").click(function() {
+            chkStateSaveProject();
+
+        });
+
+        $("#btn-project-cancle1").click(function() {
+            chkStateSaveProject();
+        });
+        $("#btn-project-close").click(function() {
+            chkStateSaveProject();
+        });
+
+        function chkStateSaveProfile() {
+            if ($("#hf-profile").val() == "hf-profile-main") {
+                $('#personnelprofile_add').modal('hide');
+            } else if ($("#hf-profile").val() == "hf-Procertificate-add") {
+                $("#Procertificate-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Procertificate-edit") {
+                $("#Procertificate-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Education-add") {
+                $("#Education-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Education-edit") {
+                $("#Education-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Experience-add") {
+                $("#Experience-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Experience-edit") {
+                $("#Experience-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Training-add") {
+                $("#Training-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Training-edit") {
+                $("#Training-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Expeconsultant-add") {
+                $("#Expeconsultant-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Expeconsultant-edit") {
+                $("#Expeconsultant-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Specialization-add") {
+                $("#Specialization-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            } else if ($("#hf-profile").val() == "hf-Specialization-edit") {
+                $("#Specialization-edit").hide();
+                $("#profile").show();
+                $("#modalfooter").show();
+                $("#profile-head-title").html("ข้อมูลประวัติบุคลากรที่ปรึกษา");
+                $("#hf-profile").val("hf-profile-main");
+            }
+        }
+
+        function chkStateSaveProject() {
+            if ($("#hf-project").val() == "hf-project-main") {
+                $('#project_edit').modal('hide');
+            } else if ($("#hf-project").val() == "hf-board-add") {
+                $("#board-edit").hide();
+                $("#project").show();
+                $("#project-head-title").html("เพิ่มข้อมูลโครงการ");
+                $("#hf-project").val("hf-project-main");
+            } else if ($("#hf-project").val() == "hf-board-edit") {
+                $("#board-edit").hide();
+                $("#project").show();
+                $("#project-head-title").html("เพิ่มข้อมูลโครงการ");
+                $("#hf-project").val("hf-project-main");
+            }
+
+
+        }
+
+
+        $("#btn-ChkRegister").click(function() {
+            $('#ChkRegister_Form').modal('show');
+            $("#register").show();
+
+            $("#ChkRegister-head-title").html("แก้ไขข้อมูลส่วนตัว");
+            $("#hf-ChkRegister").val("hf-ChkRegister-main");
+        });
+        $("#btn-chkregister-submit").click(function() {
+            $('#ChkRegister_Form').modal('hide');
+
+        });
+        $("#btn-chkregister-cancle").click(function() {
+            $('#ChkRegister_Form').modal('hide');
+
+        });
+
+        $('#bt2').click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, "slow");
+
+        });
+        $('#bt3').click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, "slow");
+
+        });
+        $('#bt4').click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, "slow");
+
+        });
+        $('#bt5').click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, "slow");
+
+        });
+        $('#bt6').click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, "slow");
+
+        });
+
+        function chkfileno9_1() {
+            $("#showupload").show();
+        }
+
+        function chkfileno9_2() {
+            $("#showupload").hide();
+        }
+
+        function editcontype() {
+            $("#entitytype_1").hide();
+            $("#entitytype_2").show();
+        }
+
+        function editcontype2() {
+            $("#entitytype_2").hide();
+            $("#entitytype_1").show();
+        }
+    </script>
+    <!----------- New javescript Function End------------->
+</body>
+
+</html>
